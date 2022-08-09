@@ -20,6 +20,25 @@ body {
   font-weight: 500;
   background-color: #f2ebe3;
   color: #555;
+  height: 100vh;
+}
+
+/* Article */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 /* Product image */
