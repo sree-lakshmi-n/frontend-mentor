@@ -24,7 +24,9 @@ body {
 
 /* Product image */
 .pdt-img {
+  display: inline-block;
   content: url(./images/image-product-desktop.jpg);
+  width: 100%;
 }
 
 /* Attribution Styling */
