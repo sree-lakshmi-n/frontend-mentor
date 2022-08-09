@@ -16,8 +16,9 @@ html {
 /* General Styling */
 body {
   line-height: 1;
-  font-family: "Fraunces", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  background-color: #f2ebe3;
   color: #555;
 }
 
