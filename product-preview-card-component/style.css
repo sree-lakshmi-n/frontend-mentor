@@ -22,6 +22,11 @@ body {
   color: #555;
 }
 
+/* Product image */
+.pdt-img {
+  content: url(./images/image-product-desktop.jpg);
+}
+
 /* Attribution Styling */
 .attribution {
   font-size: 11px;
@@ -29,4 +34,11 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  /* Image addition for mobile screens */
+  .pdt-img {
+    content: url(./images/image-product-mobile.jpg);
+  }
 }
