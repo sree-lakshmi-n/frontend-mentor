@@ -19,19 +19,25 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   background-color: #f2ebe3;
-  color: #555;
+  color: #6c7289;
   height: 100vh;
 }
 
-/* Article */
+/*************************
+GENERAL REUSABLE COMPONENTS 
+*************************/
 .container {
   max-width: 90%;
-  margin: 0 auto;
 }
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.subheading {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 1.6rem;
 }
 .footer {
   position: absolute;
