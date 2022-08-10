@@ -17,9 +17,9 @@ The designs were created to the following widths:
 
 ### Font weights:
 
-- Default: 300
-- Medium: 400
-- Bold: 600
+- Light: 300
+- Regular: 400
+- Semi-Bold: 600
 
 ### Line heights:
 
