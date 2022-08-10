@@ -42,14 +42,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-size: 1.6rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 .heading-primary {
-  font-family: "Fraunces", sans-serif;
+  font-family: "Fraunces", serif;
   font-weight: 700;
-  font-size: 5.2rem;
+  font-size: 3.6rem;
+  color: #1c232b;
   line-height: 1.05;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.4rem;
 }
 .footer {
   position: absolute;
