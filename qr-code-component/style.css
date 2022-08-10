@@ -21,6 +21,22 @@ body {
 }
 
 /*************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*************************/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************/
+/* QR COMPONENT */
+/*************************/
+.article {
+  height: 100vh;
+}
+
+/*************************/
 /* ATTRIBUTION */
 /*************************/
 .attribution {
@@ -33,5 +49,5 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
