@@ -18,7 +18,18 @@
 
   <body class="center">
     <article class="flex flex-dirn--col container">
-      <img alt="Gabriel Chanel Perfume image" class="pdt-img" />
+      <picture class="pdt-image-container">
+        <source
+          media="(max-width:600px)"
+          srcset="./images/image-product-mobile.jpg"
+        />
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt="Gabriel Chanel Perfume image"
+          class="pdt-img"
+        />
+      </picture>
+
       <div class="pdt-content">
         <span class="subheading">Perfume</span>
         <h1 class="heading-primary">Gabrielle Essence Eau De Parfum</h1>
