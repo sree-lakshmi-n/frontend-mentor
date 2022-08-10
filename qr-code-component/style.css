@@ -18,3 +18,14 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+/*************************/
+/* ATTRIBUTION */
+/*************************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
