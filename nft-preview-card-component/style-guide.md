@@ -1,33 +1,68 @@
 # Front-end Style Guide
 
-## Layout
+## 00 - Layout
 
 The designs were created to the following widths:
 
 - Mobile: 375px
 - Desktop: 1440px
 
-## Colors
+## 01 - Typography
 
-### Primary
+### Font Sizes (px):
 
-- Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
+10/ 12/ 14/ 16/ 18/ 20/ 24/ 30/ 36/ 44/ 52/ 62/ 74/ 86/ 98
 
-### Neutral
+- Para: 18px
 
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
+### Font weights:
 
-## Typography
+- Default: 300
+- Medium: 400
+- Bold: 600
 
-### Body Copy
+### Line heights:
 
-- Font size (paragraph): 18px
+- Default: 1
+- Small: 1.05
+- Medium: 1.2
+- Para default: 1.6
+
+### Letter spacing:
+
+- -0.5px
+- 0.75px
 
 ### Font
 
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit) \
+  Weights: 300, 400, 600
+
+## 02 - Colors
+
+- Primary:
+
+  - Soft blue: hsl(215, 51%, 70%)
+
+- Tints:
+  - Cyan: hsl(178, 100%, 50%)
+- Shades:
+  - Very dark blue (main BG): hsl(217, 54%, 11%)
+  - Very dark blue (card BG): hsl(216, 50%, 16%)
+  - Very dark blue (line): hsl(215, 32%, 27%)
+- Accents:
+  - None
+- Greys:
+  - White: hsl(0, 0%, 100%)
+
+### 05 - Shadows
+
+### 06 - Border-radius
+
+- Default: 9px
+- Medium: 15px
+
+### 07 - Whitespace
+
+- Spacing (px): \
+  2/ 4/ 8/ 12/ 16/ 24/ 32/ 48/ 64/ 80/ 96/ 128
