@@ -68,6 +68,11 @@ body {
   content: url(./images/image-product-desktop.jpg);
   width: 50%;
 }
+.pdt-description {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
 
 /*************************
  /* ATTRIBUTION  */
