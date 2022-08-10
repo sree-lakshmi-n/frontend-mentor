@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/sree-lakshmi-n/frontend-mentor/tree/main/product-preview-card-component)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://product-preview-card-component.sree112.repl.co)
 
 ## My process
 
