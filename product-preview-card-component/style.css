@@ -90,5 +90,6 @@ body {
   /* Image addition for mobile screens */
   .pdt-img {
     content: url(./images/image-product-mobile.jpg);
+    width: 100%;
   }
 }
