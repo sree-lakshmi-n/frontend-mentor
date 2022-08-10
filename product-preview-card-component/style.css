@@ -63,6 +63,10 @@ body {
 /*************************
 /* ARTICLE */
 /*************************/
+.pdt-content {
+  background-color: #ffffffd7;
+  padding: 2.4rem;
+}
 .pdt-img {
   display: inline-block;
   content: url(./images/image-product-desktop.jpg);
@@ -122,5 +126,8 @@ body {
   .pdt-img {
     content: url(./images/image-product-mobile.jpg);
     width: 100%;
+  }
+  .pdt-content {
+    padding: 2.4rem;
   }
 }
