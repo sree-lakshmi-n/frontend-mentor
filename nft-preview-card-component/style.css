@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 /* Global Reset */
 * {
   padding: 0;
@@ -14,9 +15,10 @@ html {
 /* General Styling */
 body {
   line-height: 1;
-  font-family: "Rubik", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
-  color: #555;
+  color: #2f415b;
+  background-color: #0d192b;
 }
 /*************************/
 /* ATTRIBUTION */
