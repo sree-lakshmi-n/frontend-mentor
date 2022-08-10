@@ -50,7 +50,7 @@ The designs were created to the following widths:
 
 ### Shades
 
-- None
+- Faux-Dark Slate Gray: #2a5a48
 
 ### Accents
 
