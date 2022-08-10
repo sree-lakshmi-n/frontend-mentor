@@ -31,7 +31,7 @@ The designs were created to the following widths:
 - Default: 1
 - Small: 1.05
 - Medium: 1.2
-- Para default: 1.6
+- Para default: 1.5
 
 ### Letter spacing:
 
