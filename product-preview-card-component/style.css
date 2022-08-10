@@ -76,6 +76,7 @@ body {
 .pdt-cost {
   gap: 1.2rem;
   align-items: center;
+  margin-bottom: 1.6rem;
 }
 .discounted-cost {
   font-family: "Fraunces", serif;
