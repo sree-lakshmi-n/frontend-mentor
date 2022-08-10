@@ -59,6 +59,22 @@ Used article tag since this product is an independent content.
 <article></article>
 ```
 
+Using picture tag to change src of image according to screen size
+
+```html
+<picture class="pdt-image-container">
+  <source
+    media="(max-width:600px)"
+    srcset="./images/image-product-mobile.jpg"
+  />
+  <img
+    src="./images/image-product-desktop.jpg"
+    alt="Gabriel Chanel Perfume image"
+    class="pdt-img"
+  />
+</picture>
+```
+
 Set browser font size in % \
 10px / 16px = 0.625 => 62.5%
 (for easier calculation)
