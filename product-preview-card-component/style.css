@@ -24,15 +24,18 @@ body {
 }
 
 /*************************
-GENERAL REUSABLE COMPONENTS 
-*************************/
+/* GENERAL REUSABLE COMPONENTS  */
+/*************************/
 .container {
-  max-width: 90%;
+  max-width: 60%;
 }
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex {
+  display: flex;
 }
 .subheading {
   display: block;
@@ -42,6 +45,8 @@ GENERAL REUSABLE COMPONENTS
   margin-bottom: 1.6rem;
 }
 .heading-primary {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
@@ -55,17 +60,17 @@ GENERAL REUSABLE COMPONENTS
 }
 
 /*************************
-ARTICLE
-*************************/
+/* ARTICLE */
+/*************************/
 .pdt-img {
   display: inline-block;
   content: url(./images/image-product-desktop.jpg);
-  width: 100%;
+  width: 50%;
 }
 
 /*************************
- ATTRIBUTION 
-*************************/
+ /* ATTRIBUTION  */
+/*************************/
 
 .attribution {
   font-size: 11px;
@@ -76,6 +81,12 @@ ARTICLE
 }
 
 @media only screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+  .flex-dirn--col {
+    flex-direction: column;
+  }
   /* Image addition for mobile screens */
   .pdt-img {
     content: url(./images/image-product-mobile.jpg);
