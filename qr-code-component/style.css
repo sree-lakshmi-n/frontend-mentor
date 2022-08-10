@@ -44,6 +44,7 @@ body {
 /*************************/
 .article {
   height: 100vh;
+  padding: 0.4rem 1.2rem;
 }
 .qr-wrapper {
   max-width: 30rem;
@@ -51,6 +52,10 @@ body {
   padding: 1.6rem 1.6rem 3.2rem 1.6rem;
   text-align: center;
   border-radius: 1.5rem;
+}
+.qr-wrapper :nth-child(2),
+.qr-wrapper :nth-child(3) {
+  padding: 0 1.2rem;
 }
 .qr-code {
   width: 100%;
