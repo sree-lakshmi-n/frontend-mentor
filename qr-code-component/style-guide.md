@@ -42,9 +42,9 @@ The designs were created to the following widths:
 - Primary:
   - Dark blue: hsl(218, 44%, 22%)
 - Tints:
-
-- Shades:
   - Grayish blue: hsl(220, 15%, 55%)
+- Shades:
+  - None
 - Accents:
   - None
 - Greys:
