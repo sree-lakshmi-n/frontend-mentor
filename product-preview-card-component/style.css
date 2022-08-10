@@ -70,10 +70,12 @@ body {
   padding: 2.4rem 4.8rem;
   align-self: center;
 }
+.pdt-image-container {
+  width: 100%;
+}
 .pdt-img {
   display: inline-block;
-  content: url(./images/image-product-desktop.jpg);
-  width: 50%;
+  width: 100%;
 }
 .pdt-description {
   font-size: 1.4rem;
@@ -137,11 +139,6 @@ body {
 @media only screen and (max-width: 600px) {
   .flex-dirn--col {
     flex-direction: column;
-  }
-  /* Image addition for mobile screens */
-  .pdt-img {
-    content: url(./images/image-product-mobile.jpg);
-    width: 100%;
   }
   .pdt-content {
     padding: 2.4rem;
