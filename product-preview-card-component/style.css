@@ -73,7 +73,9 @@ body {
   line-height: 1.5;
   margin-bottom: 2.4rem;
 }
-
+.pdt-cost {
+  gap: 1.2rem;
+}
 /*************************
  /* ATTRIBUTION  */
 /*************************/
