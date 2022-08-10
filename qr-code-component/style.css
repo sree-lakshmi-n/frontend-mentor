@@ -40,7 +40,12 @@ body {
 .article {
   height: 100vh;
 }
-
+.qr-wrapper {
+  max-width: 30rem;
+}
+.qr-code {
+  width: 100%;
+}
 /*************************/
 /* ATTRIBUTION */
 /*************************/
