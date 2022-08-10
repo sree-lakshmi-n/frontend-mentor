@@ -56,7 +56,7 @@ The designs were created to the following widths:
 ### 06 - Border-radius
 
 - Default: 9px
-- Medium: 11px
+- Medium: 15px
 
 ### 07 - Whitespace
 
