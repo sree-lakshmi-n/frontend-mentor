@@ -53,13 +53,13 @@ Users should be able to:
 
 ### What I learned
 
-Used article tag since this product is an independent content.
+- Used article tag since this product is an independent content.
 
 ```html
 <article></article>
 ```
 
-Using picture tag to change src of image according to screen size
+- Using picture tag to change src of image according to screen size
 
 ```html
 <picture class="pdt-image-container">
@@ -75,9 +75,9 @@ Using picture tag to change src of image according to screen size
 </picture>
 ```
 
-Set browser font size in % \
-10px / 16px = 0.625 => 62.5%
-(for easier calculation)
+- Set browser font size in % \
+  10px / 16px = 0.625 => 62.5%
+  (for easier calculation)
 
 ```css
 html {
@@ -85,7 +85,7 @@ html {
 }
 ```
 
-Overflow setting to prevent the image child element of container to have diff border
+- Overflow setting to prevent the image child element of container to have diff border
 
 ```css
 .container {
