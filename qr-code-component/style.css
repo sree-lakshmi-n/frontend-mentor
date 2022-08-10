@@ -42,6 +42,10 @@ body {
 }
 .qr-wrapper {
   max-width: 30rem;
+  background-color: #ffffff;
+  padding: 1.6rem 1.6rem 3.2rem 1.6rem;
+  text-align: center;
+  border-radius: 1.1rem;
 }
 .qr-code {
   width: 100%;
