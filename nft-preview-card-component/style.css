@@ -87,7 +87,7 @@ strong {
   content: url(./images/icon-clock.svg);
 }
 .avatar-details {
-  gap: 1.2rem;
+  gap: 1.6rem;
   font-size: 1.4rem;
 }
 .avatar-photo {
