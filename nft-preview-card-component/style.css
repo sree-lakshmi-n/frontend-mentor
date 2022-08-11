@@ -21,6 +21,12 @@ body {
   background-color: #0d192b;
 }
 /*************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*************************/
+.container {
+  max-width: 30rem;
+}
+/*************************/
 /* ATTRIBUTION */
 /*************************/
 .attribution {
