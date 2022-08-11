@@ -69,7 +69,7 @@ strong {
   justify-content: space-between;
   font-size: 1.4rem;
   padding-bottom: 2.4rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
   border-bottom: 1px solid #2f415b;
 }
 .eth-price {
@@ -85,6 +85,10 @@ strong {
 }
 .days-left::before {
   content: url(./images/icon-clock.svg);
+}
+.avatar-details {
+  gap: 1.2rem;
+  font-size: 1.4rem;
 }
 .avatar-photo {
   width: 3.6rem;
