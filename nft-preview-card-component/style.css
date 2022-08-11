@@ -38,6 +38,8 @@ body {
   padding: 2rem;
   border-radius: 1.1rem;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.5);
+  color: #8bacda;
+  font-weight: 300;
 }
 .equilibrium-img {
   width: 100%;
