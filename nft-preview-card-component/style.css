@@ -19,12 +19,18 @@ body {
   font-weight: 400;
   color: #2f415b;
   background-color: #0d192b;
+  height: 100vh;
 }
 /*************************/
 /* GENERAL REUSABLE COMPONENTS */
 /*************************/
 .container {
   max-width: 30rem;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*************************/
 /* NFT CARD */
