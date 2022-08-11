@@ -29,6 +29,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
 .heading-primary {
   font-size: 1.8rem;
   color: #ffffff;
@@ -57,6 +61,24 @@ body {
   font-size: 1.4rem;
   line-height: 1.5;
   margin-bottom: 1.6rem;
+}
+.cta-details {
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.eth-price {
+  color: #00fff7;
+  font-weight: 600;
+}
+.eth-price::before,
+.days-left::before {
+  margin-right: 0.8rem;
+}
+.eth-price::before {
+  content: url(./images/icon-ethereum.svg);
+}
+.days-left::before {
+  content: url(./images/icon-clock.svg);
 }
 
 /*************************/
