@@ -68,6 +68,9 @@ strong {
 .cta-details {
   justify-content: space-between;
   font-size: 1.4rem;
+  padding-bottom: 2.4rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #2f415b;
 }
 .eth-price {
   color: #00fff7;
@@ -82,6 +85,12 @@ strong {
 }
 .days-left::before {
   content: url(./images/icon-clock.svg);
+}
+.avatar-photo {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
 }
 
 /*************************/
