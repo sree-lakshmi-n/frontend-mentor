@@ -38,6 +38,9 @@ body {
   color: #ffffff;
   margin-bottom: 1.6rem;
 }
+strong {
+  font-weight: 400;
+}
 /*************************/
 /* NFT CARD */
 /*************************/
