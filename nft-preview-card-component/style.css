@@ -24,9 +24,6 @@ body {
 /*************************/
 /* GENERAL REUSABLE COMPONENTS */
 /*************************/
-.container {
-  max-width: 30rem;
-}
 .flex-center {
   display: flex;
   justify-content: center;
@@ -35,6 +32,13 @@ body {
 /*************************/
 /* NFT CARD */
 /*************************/
+.container {
+  max-width: 30rem;
+  background-color: #14253d;
+  padding: 2rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.5);
+}
 .equilibrium-img {
   width: 100%;
 }
