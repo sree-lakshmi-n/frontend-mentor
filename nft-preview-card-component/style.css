@@ -47,7 +47,6 @@ body {
 }
 strong {
   font-weight: 400;
-  color: #ffffff;
 }
 /*************************/
 /* NFT CARD */
@@ -110,6 +109,9 @@ strong {
   height: 3.6rem;
   border-radius: 50%;
   border: 1px solid #ffffff;
+}
+.avatar-name {
+  color: #ffffff;
 }
 /*************************/
 /* ACTIVE STATES */
