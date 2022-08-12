@@ -116,7 +116,8 @@ strong {
 /*************************/
 /* ACTIVE STATES */
 /*************************/
-.equilibrium-img:hover {
+.equilibrium-img:hover,
+.equilibrium-img:active {
   background-image: linear-gradient(
       rgba(0, 255, 247, 0.4),
       rgba(0, 255, 247, 0.4)
@@ -124,11 +125,14 @@ strong {
     url(./images/image-equilibrium.jpg);
   cursor: pointer;
 }
-.equilibrium-img:hover .view-icon-overlay {
+.equilibrium-img:hover .view-icon-overlay,
+.equilibrium-img:active .view-icon-overlay {
   display: inline-block;
 }
 .avatar-name:hover,
-.card-heading:hover {
+.card-heading:hover,
+.avatar-name:active,
+.card-heading:active {
   color: #00fff7;
   cursor: pointer;
 }
