@@ -125,6 +125,11 @@ strong {
 .equilibrium-img:hover .view-icon-overlay {
   display: inline-block;
 }
+.avatar-name:hover,
+.card-heading:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
 /*************************/
 /* ATTRIBUTION */
 /*************************/
