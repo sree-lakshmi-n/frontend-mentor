@@ -69,8 +69,10 @@ strong {
   width: 26rem;
   height: 26rem;
   border-radius: 0.9rem;
-  display: inline-block;
   margin-bottom: 2.4rem;
+}
+.view-icon-overlay {
+  width: 20%;
 }
 .nft-description {
   font-size: 1.4rem;
@@ -118,6 +120,7 @@ strong {
     ),
     url(./images/image-equilibrium.jpg);
 }
+
 /*************************/
 /* ATTRIBUTION */
 /*************************/
