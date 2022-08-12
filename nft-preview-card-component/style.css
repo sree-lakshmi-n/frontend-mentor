@@ -108,7 +108,16 @@ strong {
   border-radius: 50%;
   border: 1px solid #ffffff;
 }
-
+/*************************/
+/* ACTIVE STATES */
+/*************************/
+.equilibrium-img:hover {
+  background-image: linear-gradient(
+      rgba(0, 255, 247, 0.4),
+      rgba(0, 255, 247, 0.4)
+    ),
+    url(./images/image-equilibrium.jpg);
+}
 /*************************/
 /* ATTRIBUTION */
 /*************************/
