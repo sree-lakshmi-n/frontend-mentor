@@ -6,7 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* General Styling */
 body {
+  font-family: "Kumbh Sans", sans-serif;
   height: 100vh;
   line-height: 1;
 }
