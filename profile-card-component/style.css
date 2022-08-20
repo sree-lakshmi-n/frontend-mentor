@@ -13,6 +13,12 @@ body {
   line-height: 1;
   background-color: #19a2ae;
 }
+body::before {
+  content: url(./images/bg-pattern-top.svg);
+}
+body::after {
+  content: url(./images/bg-pattern-bottom.svg);
+}
 /**********************/
 /* PROFILE CARD */
 /**********************/
