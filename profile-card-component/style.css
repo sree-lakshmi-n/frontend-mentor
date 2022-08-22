@@ -12,15 +12,24 @@ body {
   height: 100vh;
   line-height: 1;
   background-color: #19a2ae;
+  overflow: hidden;
 }
 
 /**********************/
 /* PROFILE CARD */
 /**********************/
-.bg-top {
+.bg-top,
+.bg-bottom {
   position: absolute;
-  top: 0%;
-  left: 0%;
+}
+.bg-top {
+  top: -10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+.bg-bottom {
+  top: 110%;
+  left: 85%;
   transform: translate(-50%, -50%);
 }
 /**********************/
@@ -38,6 +47,8 @@ body {
 /**********************/
 /* MEDIA QUERIES */
 /**********************/
-.bg-top {
-  transform: translate(-75%, -50%);
+@media only screen and (max-width: 600px) {
+  .bg-top {
+    transform: translate(-75%, -50%);
+  }
 }
