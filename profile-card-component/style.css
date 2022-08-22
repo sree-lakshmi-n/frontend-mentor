@@ -70,12 +70,16 @@ body {
   height: 8.6rem;
   border-radius: 50%;
   border: 5px solid #fff;
-}
-/* display: inline-block;
+
   position: absolute;
   left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
+/* display: inline-block;
+  
   bottom: 0%;
-  transform: translate(-50%, 50%); */
+   */
 /**********************/
 /* ATTRIBUTION */
 /**********************/
