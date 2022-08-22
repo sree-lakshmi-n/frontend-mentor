@@ -57,10 +57,11 @@ body {
   overflow: hidden;
   width: 25%;
 }
-.profile-info-photo {
+.profile-info-photo--user {
   width: 8.6rem;
   height: 8.6rem;
   border-radius: 50%;
+  border: 1px solid #fff;
 }
 /**********************/
 /* ATTRIBUTION */
