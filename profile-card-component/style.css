@@ -21,7 +21,7 @@ body {
   align-items: center;
 }
 /**********************/
-/* PROFILE CARD */
+/* PROFILE CARD BACKGROUND*/
 /**********************/
 .container {
   height: 100vh;
@@ -41,6 +41,14 @@ body {
   top: 110%;
   left: 85%;
   transform: translate(-50%, -50%);
+}
+/**********************/
+/* PROFILE CARD */
+/**********************/
+.profile-container {
+  background-color: #fff;
+  border-radius: 11px;
+  overflow: hidden;
 }
 /**********************/
 /* ATTRIBUTION */
