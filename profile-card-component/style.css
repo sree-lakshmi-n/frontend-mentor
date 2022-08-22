@@ -52,23 +52,24 @@ body {
 /* PROFILE CARD */
 /**********************/
 .profile-container {
-  background-color: #fff;
+  background-image: url(./images/bg-pattern-card.svg);
   border-radius: 11px;
   overflow: hidden;
   width: 25%;
+  padding-top: 12.8rem;
+}
+.profile-info-photo,
+.profile-social {
+  background-color: #fff;
 }
 .profile-info-photo {
-  background-image: url(./images/bg-pattern-card.svg);
-  text-align: center;
   position: relative;
-  padding-bottom: 12.8rem;
 }
 .profile-info-photo--user {
   width: 8.6rem;
   height: 8.6rem;
   border-radius: 50%;
   border: 5px solid #fff;
-  position: absolute;
 }
 /**********************/
 /* ATTRIBUTION */
