@@ -57,6 +57,9 @@ body {
   overflow: hidden;
   width: 25%;
 }
+.profile-info-photo {
+  background-image: url(./images/bg-pattern-card.svg);
+}
 .profile-info-photo--user {
   width: 8.6rem;
   height: 8.6rem;
