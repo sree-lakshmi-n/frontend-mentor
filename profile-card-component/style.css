@@ -76,10 +76,10 @@ body {
   top: 0%;
   transform: translate(-50%, -50%);
 }
-/* display: inline-block;
-  
-  bottom: 0%;
-   */
+.profile-info {
+  padding-top: 4.8rem;
+  text-align: center;
+}
 /**********************/
 /* ATTRIBUTION */
 /**********************/
