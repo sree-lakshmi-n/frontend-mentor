@@ -9,15 +9,18 @@
 /* General Styling */
 body {
   font-family: "Kumbh Sans", sans-serif;
-  height: 100vh;
   line-height: 1;
   background-color: #19a2ae;
-  overflow: hidden;
 }
 
 /**********************/
 /* PROFILE CARD */
 /**********************/
+.container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
 .bg-top,
 .bg-bottom {
   position: absolute;
@@ -50,5 +53,8 @@ body {
 @media only screen and (max-width: 600px) {
   .bg-top {
     transform: translate(-75%, -50%);
+  }
+  .bg-bottom {
+    transform: translate(-25%, -50%);
   }
 }
