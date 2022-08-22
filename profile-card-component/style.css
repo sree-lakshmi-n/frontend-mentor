@@ -55,6 +55,12 @@ body {
   background-color: #fff;
   border-radius: 11px;
   overflow: hidden;
+  width: 25%;
+}
+.profile-info-photo {
+  width: 8.6rem;
+  height: 8.6rem;
+  border-radius: 50%;
 }
 /**********************/
 /* ATTRIBUTION */
