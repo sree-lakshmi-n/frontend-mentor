@@ -59,12 +59,14 @@ body {
 }
 .profile-info-photo {
   background-image: url(./images/bg-pattern-card.svg);
+  text-align: center;
+  position: relative;
 }
 .profile-info-photo--user {
   width: 8.6rem;
   height: 8.6rem;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 5px solid #fff;
 }
 /**********************/
 /* ATTRIBUTION */
