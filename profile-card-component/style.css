@@ -12,7 +12,14 @@ body {
   line-height: 1;
   background-color: #19a2ae;
 }
-
+/**********************/
+/* REUSABLE COMPONENTS */
+/**********************/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /**********************/
 /* PROFILE CARD */
 /**********************/
