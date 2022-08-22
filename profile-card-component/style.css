@@ -92,4 +92,7 @@ body {
   .bg-bottom {
     transform: translate(-20%, -50%);
   }
+  .profile-container {
+    width: 80%;
+  }
 }
