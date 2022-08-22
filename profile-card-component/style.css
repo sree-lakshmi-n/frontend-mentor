@@ -52,9 +52,9 @@ body {
 /**********************/
 @media only screen and (max-width: 600px) {
   .bg-top {
-    transform: translate(-75%, -50%);
+    transform: translate(-80%, -50%);
   }
   .bg-bottom {
-    transform: translate(-25%, -50%);
+    transform: translate(-20%, -50%);
   }
 }
