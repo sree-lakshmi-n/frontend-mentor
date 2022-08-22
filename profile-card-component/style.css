@@ -80,11 +80,9 @@ body {
 .profile-info {
   padding: 6.4rem 0 3.2rem 0;
   text-align: center;
-  border-bottom: 0.1px solid hsl(227, 10%, 46%);
+  border-bottom: 0.1px solid hsl(0, 0%, 59%);
 }
-.profile-social {
-  border: none;
-}
+
 /**********************/
 /* ATTRIBUTION */
 /**********************/
