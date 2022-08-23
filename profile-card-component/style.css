@@ -63,6 +63,10 @@ body {
 .profile-social {
   background-color: #fff;
 }
+
+/**********************/
+/* PROFILE INFO */
+/**********************/
 .profile-info {
   position: relative;
 }
@@ -81,6 +85,14 @@ body {
   padding: 6.4rem 0 3.2rem 0;
   text-align: center;
   border-bottom: 0.1px solid #969696;
+}
+
+/**********************/
+/* PROFILE SOCIAL */
+/**********************/
+.profile-social {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /**********************/
