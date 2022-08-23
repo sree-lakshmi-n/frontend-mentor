@@ -136,3 +136,7 @@ strong::after {
   content: "\a";
   white-space: pre;
 }
+.profile-info-age {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
