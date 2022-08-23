@@ -32,6 +32,7 @@ strong {
   font-weight: 700;
   color: #2d3248;
 }
+
 /**********************/
 /* PROFILE CARD BACKGROUND*/
 /**********************/
@@ -113,7 +114,10 @@ strong {
   padding: 1.2rem;
   text-align: center;
 }
-
+.profile-social-count::after {
+  content: "\a";
+  white-space: pre;
+}
 /**********************/
 /* ATTRIBUTION */
 /**********************/
@@ -139,9 +143,4 @@ strong {
   .profile-container {
     width: 80%;
   }
-}
-
-strong::after {
-  content: "\a";
-  white-space: pre;
 }
