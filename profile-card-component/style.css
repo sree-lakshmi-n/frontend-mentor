@@ -26,6 +26,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.heading-primary {
+  font-size: 2rem;
+}
 /**********************/
 /* PROFILE CARD BACKGROUND*/
 /**********************/
