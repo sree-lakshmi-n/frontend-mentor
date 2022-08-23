@@ -130,3 +130,8 @@ strong {
     width: 80%;
   }
 }
+
+strong::after {
+  content: "\a";
+  white-space: pre;
+}
