@@ -97,6 +97,13 @@ strong {
   gap: 0.8em;
   margin-bottom: 1.2em;
 }
+.profile-info-age {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.profile-info-place {
+  font-size: 1.4rem;
+}
 /**********************/
 /* PROFILE SOCIAL */
 /**********************/
@@ -104,10 +111,7 @@ strong {
   display: flex;
   justify-content: space-evenly;
 }
-.profile-info-age {
-  font-size: 1.8rem;
-  font-weight: 400;
-}
+
 /**********************/
 /* ATTRIBUTION */
 /**********************/
