@@ -89,7 +89,7 @@ strong {
   transform: translate(-50%, -50%);
 }
 .profile-info {
-  padding: 6.4rem 0 3.2rem 0;
+  padding: 6.4rem 0 3.2rem;
   text-align: center;
   border-bottom: 0.1px solid #969696;
 }
@@ -110,6 +110,8 @@ strong {
 .profile-social {
   display: flex;
   justify-content: space-evenly;
+  padding: 1.2rem;
+  text-align: center;
 }
 
 /**********************/
