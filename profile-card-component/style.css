@@ -114,10 +114,11 @@ strong {
   padding: 1.2rem;
   text-align: center;
 }
-.profile-social-count::after {
-  content: "\a";
-  white-space: pre;
+.profile-social-count {
+  display: block;
+  margin-bottom: 0.8rem;
 }
+
 /**********************/
 /* ATTRIBUTION */
 /**********************/
