@@ -113,6 +113,7 @@ strong {
   justify-content: space-evenly;
   padding: 2.4rem 0;
   text-align: center;
+  letter-spacing: 0.75px;
 }
 .profile-social-count {
   display: block;
