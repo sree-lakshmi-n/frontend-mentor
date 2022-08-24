@@ -12,3 +12,10 @@ html {
   font-size: 62.5%;
   /* 10px/16px = 0.625 => 62.5% */
 }
+/* General Styling */
+body {
+  line-height: 1;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  height: 100vh;
+}
