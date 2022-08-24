@@ -19,3 +19,14 @@ body {
   font-weight: 500;
   height: 100vh;
 }
+
+/* ********************************* */
+/* ATTRIBUTION  */
+/* ********************************* */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
