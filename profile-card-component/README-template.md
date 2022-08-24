@@ -1,6 +1,6 @@
-# Frontend Mentor - Profile card component solution
+# Profile card component solution
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ).
 
 ## Table of contents
 
@@ -14,9 +14,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -26,20 +23,15 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+Desktop Version
+<img src="./screenshots/desktop.png" alt="Desktop webpage screenshot" />
+Mobile Version \
+<img src="./screenshots/mobile.png" width=50% alt="Mobile webpage screenshot" />
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/sree-lakshmi-n/frontend-mentor/tree/main/profile-card-component)
+- [Live Site URL](https://profile-card-component.sree112.repl.co)
 
 ## My process
 
@@ -48,61 +40,50 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. Adding a line-break using css
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+#content::after {
+  content: "\a";
+  white-space: pre;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+2. Media query for iPad 1, 2, Mini and Air
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+```
+
+3. This was a new info for me. The background position percentage is calculated relative to the resulting number of:
+
+```text
+box size - image size = [number used for the percentage calculations]
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Positioning svg circles responsively in background
+- Using SASS/ LESS for writing styles
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Background position percentage](https://stackoverflow.com/questions/29674505/background-position-negative-percentage-values) - It was news to me that the percentage is not calculated from the width/height of the containing box.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3C Documentation on background positioning](https://drafts.csswg.org/css-backgrounds-3/#background-position) - This W3C documentation helps understand the definition of the background positioning better.
+
+- [MDN Documentation on background positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position) - This was also helpful.
+
+- [Media Queries for Standard Devices](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) - This css-tricks page lists a ton of different devices and media queries that would specifically target that device.
+
+- [Adding a line-break using CSS](https://www.educative.io/answers/how-to-add-a-line-break-using-css) - Even though I didn't use it in the end, it was great to know to add a line-break using CSS.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Sree Lakshmi N](https://www.your-site.com)
+- Frontend Mentor - [@sree-lakshmi-n](https://www.frontendmentor.io/profile/sree-lakshmi-n)
