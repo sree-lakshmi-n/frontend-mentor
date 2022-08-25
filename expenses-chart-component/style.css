@@ -35,6 +35,11 @@ body {
 .container {
   width: 40%;
 }
+.balance,
+.spending {
+  padding: 1.4em;
+  border-radius: 0.9rem;
+}
 /* ********************************* */
 /* BALANCE SECTION  */
 /* ********************************* */
