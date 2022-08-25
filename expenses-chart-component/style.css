@@ -37,7 +37,7 @@ body {
 }
 .balance,
 .spending {
-  padding: 1.4em;
+  padding: 3.2em;
   border-radius: 0.9rem;
 }
 /* ********************************* */
@@ -46,6 +46,10 @@ body {
 .balance {
   background-color: #ec775f;
   color: #fffaf5;
+  background-image: url(./images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 15%;
 }
 /* ********************************* */
 /* ATTRIBUTION  */
