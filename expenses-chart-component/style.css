@@ -39,3 +39,7 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+}
