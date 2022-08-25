@@ -90,6 +90,10 @@ strong {
   margin-bottom: 6.4rem;
 }
 /* ********************************* */
+/* WEEKLY SPENDING DATA VISUALISATION  */
+/* ********************************* */
+
+/* ********************************* */
 /* MONTHLY SPENDING SECTION  */
 /* ********************************* */
 .spending-monthly {
@@ -125,4 +129,9 @@ strong {
 .footer {
   position: absolute;
   bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
 }
