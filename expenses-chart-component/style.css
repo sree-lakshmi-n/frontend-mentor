@@ -72,7 +72,8 @@ strong {
   background-color: #fffaf5;
 }
 .spending-current-month-heading,
-.spending-prev-month-label {
+.spending-prev-month-label,
+.spending-prev-month-metrics {
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -92,9 +93,25 @@ strong {
 /* MONTHLY SPENDING SECTION  */
 /* ********************************* */
 .spending-monthly {
+  display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-
+.spending-current-month-heading,
+.spending-prev-month-metrics {
+  margin-bottom: 0.8rem;
+}
+.spending-current-month-metrics {
+  font-size: 3.6rem;
+  color: #382314;
+}
+.spending-prev-month {
+  text-align: right;
+}
+.spending-prev-month-metrics {
+  color: #382314;
+  display: inline-block;
+}
 /* ********************************* */
 /* ATTRIBUTION  */
 /* ********************************* */
