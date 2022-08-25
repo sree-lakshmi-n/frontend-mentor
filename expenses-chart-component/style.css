@@ -33,12 +33,15 @@ body {
 /* EXPENSES CONTAINER  */
 /* ********************************* */
 .container {
-  width: 40%;
+  width: 35%;
 }
 .balance,
 .spending {
-  padding: 3.2em;
-  border-radius: 0.9rem;
+  padding: 2.8em;
+  border-radius: 1.5rem;
+}
+strong {
+  font-weight: 700;
 }
 /* ********************************* */
 /* BALANCE SECTION  */
@@ -55,6 +58,10 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   margin-bottom: 1.2rem;
+  color: #f8e9dd;
+}
+.balance-amount {
+  font-size: 3rem;
 }
 /* ********************************* */
 /* ATTRIBUTION  */
