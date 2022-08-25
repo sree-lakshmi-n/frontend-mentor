@@ -48,8 +48,13 @@ body {
   color: #fffaf5;
   background-image: url(./images/logo.svg);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 15%;
+  background-position: 95%;
+  background-size: 12%;
+}
+.balance-heading {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
 }
 /* ********************************* */
 /* ATTRIBUTION  */
