@@ -91,6 +91,9 @@ strong {
 /* ********************************* */
 /* MONTHLY SPENDING SECTION  */
 /* ********************************* */
+.spending-monthly {
+  justify-content: space-between;
+}
 /* ********************************* */
 /* ATTRIBUTION  */
 /* ********************************* */
