@@ -16,7 +16,7 @@ html {
 body {
   line-height: 1;
   font-family: "DM Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   height: 100vh;
   background-color: #f8e9dd;
 }
@@ -34,6 +34,7 @@ body {
 /* ********************************* */
 .container {
   width: 35%;
+  color: #93867b;
 }
 .balance,
 .spending {
@@ -70,12 +71,26 @@ strong {
 .spending {
   background-color: #fffaf5;
 }
+.spending-current-month-heading,
+.spending-prev-month-label {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
 /* ********************************* */
 /* WEEKLY SPENDING SECTION  */
 /* ********************************* */
 .spending-weekly {
   border-bottom: 2.5px solid hsl(27, 66%, 92%);
+  margin-bottom: 2.4rem;
 }
+.spending-weekly-heading {
+  font-size: 2.4rem;
+  color: #382314;
+  margin-bottom: 6.4rem;
+}
+/* ********************************* */
+/* MONTHLY SPENDING SECTION  */
+/* ********************************* */
 /* ********************************* */
 /* ATTRIBUTION  */
 /* ********************************* */
