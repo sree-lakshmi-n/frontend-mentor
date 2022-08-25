@@ -101,6 +101,10 @@ strong {
   gap: 1.2rem;
   text-align: center;
 }
+.day-label {
+  font-size: 1.4rem;
+  text-align: center;
+}
 /* ********************************* */
 /* MONTHLY SPENDING SECTION  */
 /* ********************************* */
