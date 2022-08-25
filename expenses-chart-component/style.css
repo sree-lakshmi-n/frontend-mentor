@@ -53,6 +53,7 @@ strong {
   background-repeat: no-repeat;
   background-position: 95%;
   background-size: 12%;
+  margin-bottom: 1.6em;
 }
 .balance-heading {
   font-size: 1.4rem;
@@ -62,6 +63,12 @@ strong {
 }
 .balance-amount {
   font-size: 3rem;
+}
+/* ********************************* */
+/* SPENDING SECTION  */
+/* ********************************* */
+.spending {
+  background-color: #fffaf5;
 }
 /* ********************************* */
 /* ATTRIBUTION  */
