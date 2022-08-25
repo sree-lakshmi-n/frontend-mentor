@@ -71,6 +71,12 @@ strong {
   background-color: #fffaf5;
 }
 /* ********************************* */
+/* WEEKLY SPENDING SECTION  */
+/* ********************************* */
+.spending-weekly {
+  border-bottom: 2.5px solid hsl(27, 66%, 92%);
+}
+/* ********************************* */
 /* ATTRIBUTION  */
 /* ********************************* */
 .attribution {
