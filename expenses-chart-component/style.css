@@ -18,7 +18,12 @@ body {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   height: 100vh;
+  background-color: #f8e9dd;
 }
+
+/* ********************************* */
+/* REUSABLE COMPONENTS  */
+/* ********************************* */
 
 /* ********************************* */
 /* ATTRIBUTION  */
