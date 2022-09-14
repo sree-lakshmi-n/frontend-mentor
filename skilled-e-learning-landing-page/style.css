@@ -110,6 +110,10 @@ body {
 .hero-textbox {
   width: 50%;
 }
+.hero-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
 .hero-cta {
   background: linear-gradient(to bottom, #fe6b4e, #f23795);
 }
