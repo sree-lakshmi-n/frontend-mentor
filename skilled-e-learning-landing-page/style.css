@@ -74,3 +74,12 @@ body {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+.cta-btn {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  background-color: #13183f;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 2.5rem;
+}
