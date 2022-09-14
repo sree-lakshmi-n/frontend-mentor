@@ -95,3 +95,16 @@ body {
 .header-cta {
   background-color: #13183f;
 }
+
+/* HERO SECTION */
+.section-hero {
+  display: flex;
+}
+.hero-imagebox,
+.hero-textbox {
+  width: 50%;
+}
+
+.hero-img {
+  width: 100%;
+}
