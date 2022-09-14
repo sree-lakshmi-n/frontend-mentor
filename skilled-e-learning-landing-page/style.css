@@ -68,13 +68,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 /* Reusable classes */
-.link:link,
-.link:visited {
-  text-decoration: none;
-}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
+}
+.heading-primary {
+  font-size: 3.6rem;
+  color: #13183f;
+}
+.link:link,
+.link:visited {
+  text-decoration: none;
 }
 .cta-btn {
   display: inline-block;
@@ -91,7 +96,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 3.2rem;
+  padding: 1.6rem 0;
 }
 .header-cta {
   background-color: #13183f;
