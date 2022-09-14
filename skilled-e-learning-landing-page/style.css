@@ -65,6 +65,8 @@ body {
   line-height: 1;
   color: #6f777f;
 }
-/* .container {
-  max-width: ;
-} */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
