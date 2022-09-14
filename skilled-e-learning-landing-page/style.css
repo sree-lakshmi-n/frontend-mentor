@@ -76,19 +76,22 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
-/* Header */
+.cta-btn {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 2.5rem;
+}
+
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem 3.2rem;
 }
-.cta-btn {
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  color: #fff;
+.header-cta {
   background-color: #13183f;
-  border: none;
-  font-size: 1.6rem;
-  border-radius: 2.5rem;
 }
