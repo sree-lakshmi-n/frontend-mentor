@@ -4,3 +4,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* General Styling */
+body {
+  font-size: 62.5%;
+  line-height: 1;
+}
