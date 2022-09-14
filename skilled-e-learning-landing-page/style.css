@@ -23,12 +23,20 @@ Para default: 1.6
 --- 02 COLORS
 
 - Primary: 
+#13183F
 - Tints: 
-
+#FE6B4E
+#FD6555
+#F0309F
+#F23795
 - Shades: 
-
-- Accents: 
+#C5D2EE
+#e7e8ec
+- Accents:
+#F96B98 
 - Greys:
+
+#6f777f
 
 --- 05 SHADOWS
 
@@ -50,7 +58,13 @@ Medium: 11px
   box-sizing: border-box;
 }
 /* General Styling */
-body {
+html {
   font-size: 62.5%;
-  line-height: 1;
 }
+body {
+  line-height: 1;
+  color: #6f777f;
+}
+/* .container {
+  max-width: ;
+} */
