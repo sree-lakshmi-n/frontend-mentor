@@ -83,6 +83,7 @@ body {
   border: none;
   font-size: 1.6rem;
   border-radius: 2.5rem;
+  font-weight: 500;
 }
 
 /* HEADER */
@@ -104,7 +105,9 @@ body {
 .hero-textbox {
   width: 50%;
 }
-
+.hero-cta {
+  background: linear-gradient(to bottom, #fe6b4e, #f23795);
+}
 .hero-img {
   width: 100%;
 }
