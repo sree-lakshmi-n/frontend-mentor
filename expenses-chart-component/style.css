@@ -92,14 +92,22 @@ strong {
 /* ********************************* */
 /* WEEKLY SPENDING DATA VISUALISATION  */
 /* ********************************* */
-.spending-weekly-metrics {
-  justify-content: space-between;
-}
 .day-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   text-align: center;
+  height: 25rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.day-graph {
+  width: 80%;
+  padding: 3em 0;
+  background-color: #ec775f;
+  border-radius: 0.9rem;
+  height: 30%;
 }
 .day-label {
   font-size: 1.4rem;
