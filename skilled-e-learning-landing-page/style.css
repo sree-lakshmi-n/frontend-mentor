@@ -67,6 +67,7 @@ body {
   color: #6f777f;
   font-family: "Poppins", sans-serif;
 }
+/* Reusable classes */
 .link:link,
 .link:visited {
   text-decoration: none;
@@ -75,6 +76,13 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
 }
 .cta-btn {
   display: inline-block;
