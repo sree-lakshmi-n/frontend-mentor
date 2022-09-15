@@ -1,16 +1,19 @@
-/* HEADER */
+/************************/
+/* WRAPPER */
+/************************/
 .wrapper {
   background-image: url(../images/image-hero-desktop.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 120% calc(100% - 50px);
-  min-height: 80vh;
 }
+/************************/
+/* HEADER */
+/************************/
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 1.6rem 0;
 }
 .header-cta {
@@ -20,15 +23,11 @@
 /* HERO SECTION */
 .section-hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: relative;
-}
-
-.hero-textbox {
-  width: 50%;
+  min-height: 80vh;
 }
 .hero-textbox {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
