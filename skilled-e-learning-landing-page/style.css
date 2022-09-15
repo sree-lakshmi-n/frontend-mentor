@@ -98,17 +98,12 @@ body {
   background-size: contain;
   background-position: 120% calc(100% - 50px);
   min-height: 80vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .header {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1.6rem 0;
+  /* align-items: center;
+  align-self: flex-start;
+  padding: 1.6rem 0; */
 }
 .header-cta {
   background-color: #13183f;
