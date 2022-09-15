@@ -5,7 +5,7 @@
   background-image: url(../images/image-hero-desktop.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 120% calc(100% - 50px);
+  background-position: 120% calc(100% - 75px);
 }
 /************************/
 /* HEADER */
