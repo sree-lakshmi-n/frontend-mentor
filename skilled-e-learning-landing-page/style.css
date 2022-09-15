@@ -105,10 +105,17 @@ body {
 /* HERO SECTION */
 .section-hero {
   display: flex;
+  gap: 12.8rem;
 }
-.hero-imagebox,
+
 .hero-textbox {
-  width: 50%;
+  width: 45%;
+}
+.hero-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem;
 }
 .hero-text {
   font-size: 1.6rem;
@@ -116,6 +123,7 @@ body {
 }
 .hero-cta {
   background: linear-gradient(to bottom, #fe6b4e, #f23795);
+  align-self: flex-start;
 }
 .hero-img {
   width: 100%;
