@@ -7,10 +7,11 @@
   min-height: 80vh;
 }
 .header {
+  display: flex;
   justify-content: space-between;
-  /* align-items: center;
-  align-self: flex-start;
-  padding: 1.6rem 0; */
+  align-items: center;
+
+  padding: 1.6rem 0;
 }
 .header-cta {
   background-color: #13183f;
