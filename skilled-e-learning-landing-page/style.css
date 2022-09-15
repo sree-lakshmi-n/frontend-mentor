@@ -92,6 +92,18 @@ body {
 }
 
 /* HEADER */
+.wrapper {
+  background-image: url(./images/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 120% calc(100% - 50px);
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -105,11 +117,13 @@ body {
 /* HERO SECTION */
 .section-hero {
   display: flex;
-  gap: 12.8rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .hero-textbox {
-  width: 45%;
+  width: 50%;
 }
 .hero-textbox {
   display: flex;
@@ -124,6 +138,9 @@ body {
 .hero-cta {
   background: linear-gradient(to bottom, #fe6b4e, #f23795);
   align-self: flex-start;
+}
+.hero-imagebox {
+  width: 60%;
 }
 .hero-img {
   width: 100%;
