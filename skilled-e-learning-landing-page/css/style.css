@@ -47,3 +47,10 @@
 .hero-img {
   width: 100%;
 }
+
+/************************/
+/* POPULAR COURSES SECTION */
+/************************/
+.title-course {
+  background: linear-gradient(to bottom, #fe6b4e, #f23795);
+}
