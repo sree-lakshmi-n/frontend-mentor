@@ -61,6 +61,11 @@
   border-radius: 1.1rem;
   background-color: #fff;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: space-between;
 }
 
 .title-course {
@@ -82,12 +87,10 @@
   font-size: 2.4rem;
   color: #13183f;
   font-weight: 700;
-  margin-bottom: 2.4rem;
 }
 .course-text {
   font-size: 1.6rem;
   line-height: 1.6;
-  margin-bottom: 2.4rem;
 }
 .course-link {
   font-size: 1.8rem;
