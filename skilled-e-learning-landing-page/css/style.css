@@ -51,6 +51,10 @@
 /************************/
 /* POPULAR COURSES SECTION */
 /************************/
+.section-popular-courses {
+  padding: 2.4rem 0 8rem;
+  background: linear-gradient(to bottom, #fff, #e2e9f7);
+}
 .title-course {
   background: linear-gradient(to bottom, #fe6b4e, #f23795);
 }
