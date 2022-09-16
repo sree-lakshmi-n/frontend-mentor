@@ -11,9 +11,6 @@
 /* HEADER */
 /************************/
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1.6rem 0;
 }
 .header-cta {
@@ -52,7 +49,7 @@
 /* POPULAR COURSES SECTION */
 /************************/
 .section-popular-courses {
-  padding: 2.4rem 0 8rem;
+  padding: 2.4rem 0 12.8rem;
   background: linear-gradient(to bottom, #fff, #e2e9f7);
 }
 /* course boxes */
