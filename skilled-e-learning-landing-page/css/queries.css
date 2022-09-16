@@ -8,4 +8,15 @@
   .wrapper {
     background-image: none;
   }
+  .section-hero {
+    flex-direction: column;
+    padding-top: 3.2rem;
+    gap: 2.4rem;
+  }
+  .hero-textbox {
+    width: 100%;
+  }
+  .hero-imagebox {
+    display: block;
+  }
 }
