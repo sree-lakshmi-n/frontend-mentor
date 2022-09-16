@@ -97,6 +97,13 @@
 /************************/
 /* FOOTER */
 /************************/
+.footer {
+  padding: 3.2rem 0;
+  background-color: #13183f;
+}
+.footer .logo {
+  filter: invert(100%);
+}
 .footer-cta {
   background: linear-gradient(to bottom, #f23795, #fe6b4e);
 }
