@@ -39,7 +39,7 @@
   align-self: flex-start;
 }
 .hero-imagebox {
-  width: 60%;
+  display: none;
 }
 .hero-img {
   width: 100%;
