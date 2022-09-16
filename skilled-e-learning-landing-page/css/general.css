@@ -48,7 +48,7 @@ Medium: 11px
 2/ 4/ 8/ 12/ 16/ 24/ 32/ 48/ 64/ 80/ 96/ 128
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 
 /* Global Reset */
 * {
@@ -63,7 +63,7 @@ html {
 body {
   line-height: 1;
   color: #6f777f;
-  font-family: "Poppins", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 /* Reusable classes */
 
@@ -81,12 +81,14 @@ body {
   font-size: 4.8rem;
   color: #13183f;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 /* anchor links */
 .link:link,
 .link:visited {
   text-decoration: none;
+  font-weight: 600;
 }
 
 /* cta buttons */
@@ -97,5 +99,5 @@ body {
   border: none;
   font-size: 1.6rem;
   border-radius: 2.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
