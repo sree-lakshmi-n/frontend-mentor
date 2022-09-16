@@ -5,4 +5,7 @@
   .grid {
     grid-template-columns: 1fr;
   }
+  .wrapper {
+    background-image: none;
+  }
 }
