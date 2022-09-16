@@ -55,6 +55,13 @@
   padding: 2.4rem 0 8rem;
   background: linear-gradient(to bottom, #fff, #e2e9f7);
 }
+/* course boxes */
+.course {
+  padding: 6.4rem 2.4rem 4.8rem;
+  border-radius: 1.1rem;
+  background-color: #fff;
+}
+
 .title-course {
   background: linear-gradient(to bottom, #fe6b4e, #f23795);
 }
