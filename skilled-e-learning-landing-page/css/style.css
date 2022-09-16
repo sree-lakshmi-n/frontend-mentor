@@ -93,3 +93,10 @@
   font-size: 1.8rem;
   color: #ee4b75;
 }
+
+/************************/
+/* FOOTER */
+/************************/
+.footer-cta {
+  background: linear-gradient(to bottom, #f23795, #fe6b4e);
+}
