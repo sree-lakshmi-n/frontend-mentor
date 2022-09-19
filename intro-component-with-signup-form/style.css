@@ -69,6 +69,14 @@ input {
   padding: 1.2em;
   border-radius: 0.9rem;
 }
+.disclaimer {
+  color: hsl(246, 25%, 77%);
+  font-size: 1rem;
+  text-align: center;
+}
+.disclaimer * {
+  padding: 0;
+}
 
 /***********************/
 /* FOOTER */
