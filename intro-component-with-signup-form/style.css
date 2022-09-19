@@ -30,6 +30,9 @@ body {
   display: flex;
   align-items: center;
 }
+strong {
+  font-weight: 600;
+}
 
 /***********************/
 /* CTA SECTION */
