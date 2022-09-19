@@ -67,6 +67,14 @@ input[placeholder] {
 .section-cta * {
   width: 100%;
 }
+.price-infobox {
+  background-color: #6055a5;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+  padding: 1.2em;
+  border-radius: 1.1rem;
+  text-align: center;
+}
 .cta-form {
   background-color: #fff;
   padding: 4.8rem 4.8rem 3.2rem;
