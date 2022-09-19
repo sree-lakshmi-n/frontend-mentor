@@ -57,11 +57,13 @@ a:active {
   flex-direction: column;
   gap: 2.4rem;
   background-color: #fff;
-  padding: 3.2rem;
+  padding: 4.8rem 4.8rem 2.4rem;
   border-radius: 1.1rem;
 }
 .cta-form * {
   width: 100%;
+  padding: 1.2em;
+  border-radius: 0.9rem;
 }
 
 /***********************/
