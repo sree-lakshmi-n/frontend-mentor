@@ -50,6 +50,19 @@ a:active {
   width: 80%;
   gap: 2.4rem;
 }
+.section-cta * {
+  width: 100%;
+}
+.cta-form {
+  flex-direction: column;
+  gap: 2.4rem;
+  background-color: #fff;
+  padding: 3.2rem;
+  border-radius: 1.1rem;
+}
+.cta-form * {
+  width: 100%;
+}
 
 /***********************/
 /* FOOTER */
