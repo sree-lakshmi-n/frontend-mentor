@@ -20,8 +20,6 @@ body {
 }
 
 /* REUSABLE CLASSES */
-.container {
-}
 .flex-center--v {
   display: flex;
   align-items: center;
