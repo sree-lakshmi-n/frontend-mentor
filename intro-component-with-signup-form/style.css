@@ -72,9 +72,17 @@ input {
 .cta-form :last-child {
   margin-bottom: 0;
 }
+.submit-btn {
+  background-color: #38cc8c;
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
 .disclaimer {
   display: block;
-  color: hsl(246, 25%, 77%);
+  color: #b9b6d3;
   font-size: 1rem;
   text-align: center;
 }
