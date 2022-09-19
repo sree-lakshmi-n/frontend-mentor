@@ -58,18 +58,22 @@ input {
   width: 100%;
 }
 .cta-form {
-  flex-direction: column;
-  gap: 2.4rem;
   background-color: #fff;
-  padding: 4.8rem 4.8rem 2.4rem;
+  padding: 4.8rem 4.8rem 3.2rem;
   border-radius: 1.1rem;
 }
 .cta-form * {
   width: 100%;
   padding: 1.2em;
   border-radius: 0.9rem;
+  margin-bottom: 2.4rem;
+}
+.cta-form :nth-last-child(2),
+.cta-form :last-child {
+  margin-bottom: 0;
 }
 .disclaimer {
+  display: block;
   color: hsl(246, 25%, 77%);
   font-size: 1rem;
   text-align: center;
