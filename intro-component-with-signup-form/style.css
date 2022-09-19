@@ -42,6 +42,10 @@ a:hover,
 a:active {
   color: #ff9494;
 }
+input {
+  outline: none;
+  border: none;
+}
 
 /***********************/
 /* CTA SECTION */
