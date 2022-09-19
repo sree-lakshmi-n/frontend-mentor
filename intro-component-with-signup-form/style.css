@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+/* GENERAL STYLING */
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /***********************/
 /* ATTRIBUTION */
 /***********************/
