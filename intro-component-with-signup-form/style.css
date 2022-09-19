@@ -11,6 +11,13 @@ body {
   background-image: url(./images/bg-intro-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
 }
 
 /***********************/
