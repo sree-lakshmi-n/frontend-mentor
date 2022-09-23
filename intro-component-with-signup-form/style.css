@@ -124,3 +124,21 @@ input[placeholder] {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.input-box {
+  position: relative;
+  padding: 0;
+}
+.error {
+  border: 2px solid hsl(0, 100%, 79%);
+}
+.error input {
+  border: none;
+}
+.error::before {
+  content: url(./images/icon-error.svg);
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
