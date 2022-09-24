@@ -132,8 +132,14 @@ input[placeholder] {
 .error {
   border: 2px solid hsl(0, 100%, 79%);
 }
+.input-box.error {
+  margin-bottom: 4rem;
+}
 .error input {
   border: none;
+}
+.error input[value] {
+  color: hsl(0, 100%, 79%);
 }
 .error::before {
   content: url(./images/icon-error.svg);
@@ -141,4 +147,16 @@ input[placeholder] {
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
+}
+.error::after {
+  content: attr(data-error);
+  color: hsl(0, 100%, 79%);
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  top: 100%;
+  left: 0;
+  padding-top: 0.4rem;
+  font-style: italic;
+  font-size: 1.2rem;
 }
