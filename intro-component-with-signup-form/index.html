@@ -30,16 +30,17 @@
         <div class="price-infobox">
           <strong>Try it free 7 days </strong>then $20/mo. thereafter
         </div>
-        <form class="cta-form" action="#">
+        <form class="cta-form" action="#" onsubmit="return false">
           <div class="input-box" data-error="">
             <input
               type="text"
               placeholder="First Name"
               name="fname"
               class="first-name"
+              value=""
             />
           </div>
-          <div class="input-box error">
+          <div class="input-box" data-error="">
             <input
               type="text"
               placeholder="Last Name"
@@ -47,15 +48,15 @@
               class="last-name"
             />
           </div>
-          <div class="input-box error">
+          <div class="input-box" data-error="">
             <input
-              type="email"
+              type="text"
               placeholder="Email Address"
               name="mailid"
               class="mail-id"
             />
           </div>
-          <div class="input-box error">
+          <div class="input-box" data-error="">
             <input
               type="password"
               placeholder="Password"
