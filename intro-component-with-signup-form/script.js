@@ -1,9 +1,12 @@
 `use strict`;
-const firstName = document.querySelector(".first-name");
-const lastName = document.getElementsByClassName("last-name")[0];
-const mailId = document.getElementsByClassName("mail-id")[0];
-const passWord = document.getElementsByClassName("pwd")[0];
-const submitBtn = document.getElementsByClassName("submit-btn")[0];
+const class_ = (element) => {
+  return document.getElementsByClassName(element);
+};
+const firstName = class_("first-name")[0];
+const lastName = class_("last-name")[0];
+const mailId = class_("mail-id")[0];
+const passWord = class_("pwd")[0];
+const submitBtn = class_("submit-btn")[0];
 const inputs = [firstName, lastName, mailId, passWord];
 
 // Resetting data-error attribute values
@@ -50,6 +53,7 @@ const validate = () => {
   resetDataErr();
   validateInputs();
   isEmpty();
+  // if()
 };
 submitBtn.addEventListener("click", validate);
 
