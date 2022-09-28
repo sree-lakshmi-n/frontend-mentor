@@ -4,11 +4,37 @@ const lastName = document.getElementsByClassName("last-name")[0];
 const mailId = document.getElementsByClassName("mail-id")[0];
 const passWord = document.getElementsByClassName("pwd")[0];
 const submitBtn = document.getElementsByClassName("submit-btn")[0];
+const inputs = [firstName, lastName, mailId, passWord];
 
-// Checking if input values are empty
-const isEmpty = (str) => {
-  return !str.trim().length;
+// Resetting data-error attribute values
+const resetDataErr = () => {
+  inputs.forEach((e) => {
+    e.parentElement.setAttribute("data-error", ``);
+  });
 };
+// Checking if input values are empty
+const isEmpty = () => {
+  inputs.forEach((e) => {
+    if (e.value.trim().length <= 0) {
+      e.parentElement.setAttribute(
+        "data-error",
+        `${e.placeholder} cannot be empty`
+      );
+    }
+  });
+};
+const regPwd = /^[a-z]{8,11}/g;
+const validateInputs = () => {
+  if (!regPwd.test(passWord.value)) {
+    passWord.parentElement.setAttribute(
+      "data-error",
+      `Password should have 8-11 letters`
+    );
+  }
+  isEmpty();
+};
+
+submitBtn.addEventListener("click", validateInputs);
 
 /*
 const regFirstName = /^[a-zA-Z ]{2,30}$/g;
