@@ -23,18 +23,35 @@ const isEmpty = () => {
     }
   });
 };
+
+// Input validation
+const regName = /^[a-zA-Z]+((['. ][a-zA-Z ])?[a-zA-Z]*)*$/g;
+const regMail = /^\w*(\-\w)?(\.\w*)?@\w+\.\w{2,3}(\.\w{2,3})?/g;
 const regPwd = /^[a-z]{8,11}/g;
+
 const validateInputs = () => {
+  if (!regName.test(firstName.value)) {
+    firstName.parentElement.setAttribute("data-error", "First Name is invalid");
+  }
+  if (!regName.test(lastName.value)) {
+    lastName.parentElement.setAttribute("data-error", "Last Name is invalid");
+  }
+  if (!regMail.test(mailId.value)) {
+    mailId.parentElement.setAttribute("data-error", "Email id is invalid");
+  }
   if (!regPwd.test(passWord.value)) {
     passWord.parentElement.setAttribute(
       "data-error",
       `Password should have 8-11 letters`
     );
   }
+};
+const validate = () => {
+  resetDataErr();
+  validateInputs();
   isEmpty();
 };
-
-submitBtn.addEventListener("click", validateInputs);
+submitBtn.addEventListener("click", validate);
 
 /*
 const regFirstName = /^[a-zA-Z ]{2,30}$/g;
