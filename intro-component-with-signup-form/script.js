@@ -10,31 +10,37 @@ const isEmpty = (str) => {
   return !str.trim().length;
 };
 
-// const inputs = [firstName, lastName, mailId, passWord];
-// inputs.forEach((e) => {
-//   if (isEmpty(e.value)) {
-//     e.parentElement.setAttribute(
-//       "data-error",
-//       `${e.placeholder} cannot be empty`
-//     );
-//   }
-//   console.log(e.parentElement.getAttribute("data-error"));
-// });
-
-const regName = /^[a-zA-Z ]{2,30}$/g;
+/*
+const regFirstName = /^[a-zA-Z ]{2,30}$/g;
+const regLastName = /^[a-zA-Z ]{0,30}$/g;
 const regMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
 const minPwdLen = 8;
 
-const validateInputs = (arg, type) => {
-  const res = "";
-  if (isEmpty(arg)) res = "cannot be empty";
-  else if (
-    (type === "name" && regName.test(arg)) ||
-    (type === "mail" && regMail.test(arg)) ||
-    type === "pwd"
+const validateInputs = (arg, grp) => {
+  console.log();
+  console.log();
+  let res = "not valid";
+  if (isEmpty(arg)) {
+    res = "cannot be empty";
+  } else if (grp === "pwd" && arg.length <= 7) {
+    res = "should have more than 7 characters";
+  } else if (
+    (grp === "fname" && regFirstName.test(arg)) ||
+    (grp === "lname" && regLastName.test(arg)) ||
+    (grp === "mailid" && regMail.test(arg)) ||
+    (grp === "pwd" && arg.length > 7)
   )
-    res = "";
-  else res = "is not valid";
+    res = "valid";
+
+  return res;
 };
 
-submitBtn.addEventListener("click", (e) => {});
+submitBtn.addEventListener("click", (e) => {
+  //   console.log(firstName.value, lastName.value);
+  const fname = validateInputs(firstName.value, "fname");
+  const lname = validateInputs(lastName.value, "lname");
+  const mail = validateInputs(mailId.value, "mailid");
+  const pwd = validateInputs(passWord.value, "pwd");
+  console.log(fname, lname, mail, pwd);
+});
+*/
