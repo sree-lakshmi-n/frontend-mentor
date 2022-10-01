@@ -7,12 +7,14 @@ const lastName = class_("last-name")[0];
 const mailId = class_("mail-id")[0];
 const passWord = class_("pwd")[0];
 const submitBtn = class_("submit-btn")[0];
+const inputBoxes = class_("input-box");
 const inputs = [firstName, lastName, mailId, passWord];
 
 // Resetting data-error attribute values
 const resetDataErr = () => {
   inputs.forEach((e) => {
     e.parentElement.setAttribute("data-error", ``);
+    e.parentElement.classList.remove("error");
   });
 };
 // Checking if input values are empty
@@ -28,9 +30,9 @@ const isEmpty = () => {
 };
 
 // Input validation
-const regName = /^[a-zA-Z]+((['. ][a-zA-Z ])?[a-zA-Z]*)*$/g;
-const regMail = /^\w*(\-\w)?(\.\w*)?@\w+\.\w{2,3}(\.\w{2,3})?/g;
-const regPwd = /^[a-z]{8,11}/g;
+const regName = /^[a-zA-Z]+((['. ][a-zA-Z ])?[a-zA-Z]*)*$/;
+const regMail = /^\w*(\-\w)?(\.\w*)?@\w+\.\w{2,3}(\.\w{2,3})?/;
+const regPwd = /^(\w){8,11}/;
 
 const validateInputs = () => {
   if (!regName.test(firstName.value)) {
@@ -43,17 +45,28 @@ const validateInputs = () => {
     mailId.parentElement.setAttribute("data-error", "Email id is invalid");
   }
   if (!regPwd.test(passWord.value)) {
-    passWord.parentElement.setAttribute(
-      "data-error",
-      `Password should have 8-11 letters`
-    );
+    if (passWord.value.length < 8 || passWord.value.length > 11) {
+      passWord.parentElement.setAttribute(
+        "data-error",
+        `Password should have 8-11 letters`
+      );
+    } else {
+      passWord.parentElement.setAttribute(
+        "data-error",
+        `Password should not have special characters`
+      );
+    }
   }
 };
 const validate = () => {
   resetDataErr();
   validateInputs();
   isEmpty();
-  // if()
+  Array.from(inputBoxes).forEach((e) => {
+    if (e.getAttribute("data-error")) {
+      e.classList.add("error");
+    }
+  });
 };
 submitBtn.addEventListener("click", validate);
 
