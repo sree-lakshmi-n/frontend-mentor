@@ -61,6 +61,10 @@ input::placeholder {
 input[placeholder] {
   border: 1px solid rgba(185, 182, 211, 0.3);
 }
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer;
+}
 
 /***********************/
 /* CTA SECTION */
