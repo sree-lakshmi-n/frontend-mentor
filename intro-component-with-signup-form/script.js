@@ -32,7 +32,7 @@ const isEmpty = () => {
 // Input validation
 const regName = /^[a-zA-Z]+((['. ][a-zA-Z ])?[a-zA-Z]*)*$/;
 const regMail = /^\w*(\-\w)?(\.\w*)?@\w+\.\w{2,3}(\.\w{2,3})?/;
-const regPwd = /^(\w){8,11}/;
+const regPwd = /^[A-Za-z0-9]{8,11}/;
 
 const validateInputs = () => {
   if (!regName.test(firstName.value)) {
@@ -44,18 +44,16 @@ const validateInputs = () => {
   if (!regMail.test(mailId.value)) {
     mailId.parentElement.setAttribute("data-error", "Email id is invalid");
   }
-  if (!regPwd.test(passWord.value)) {
-    if (passWord.value.length < 8 || passWord.value.length > 11) {
-      passWord.parentElement.setAttribute(
-        "data-error",
-        `Password should have 8-11 letters`
-      );
-    } else {
-      passWord.parentElement.setAttribute(
-        "data-error",
-        `Password should not have special characters`
-      );
-    }
+  if (passWord.value.length < 8 || passWord.value.length > 11) {
+    passWord.parentElement.setAttribute(
+      "data-error",
+      `Password should have 8-11 letters`
+    );
+  } else if (!regPwd.test(passWord.value)) {
+    passWord.parentElement.setAttribute(
+      "data-error",
+      `Password should not have special characters`
+    );
   }
 };
 const validate = () => {
