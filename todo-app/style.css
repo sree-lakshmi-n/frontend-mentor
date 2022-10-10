@@ -46,7 +46,7 @@ body {
   min-height: 12rem; }
   .header__title {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4.8px;
     color: #fafafa; }
   .header__theme-toggle-button {
     align-self: flex-end; }
