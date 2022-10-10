@@ -1,5 +1,8 @@
 .header {
   padding-top: 7.2rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 12rem;
 
   &__title {
     text-transform: uppercase;
@@ -7,11 +10,6 @@
     color: $color-light-very-light-gray;
   }
   &__theme-toggle-button {
-    background-image: url(../../images/icon-moon.svg);
-    padding: 5em;
-    background-color: transparent;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: center;
+    align-self: flex-end;
   }
 }
