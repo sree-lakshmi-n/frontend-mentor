@@ -30,16 +30,23 @@ body {
   .attribution a {
     color: #3e52a3; }
 
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 1.8rem; }
+  .btn-light-theme {
+    background-image: url(../../images/icon-moon.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
+
 .header {
-  padding-top: 7.2rem; }
+  padding-top: 7.2rem;
+  display: flex;
+  justify-content: space-between;
+  min-height: 12rem; }
   .header__title {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fafafa; }
   .header__theme-toggle-button {
-    background-image: url(../../images/icon-moon.svg);
-    padding: 5em;
-    background-color: transparent;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: center; }
+    align-self: flex-end; }
