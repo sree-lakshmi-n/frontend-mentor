@@ -16,12 +16,6 @@
     color: $color-light-dark-grayish-blue;
     opacity: 0;
   }
-  &-light-theme {
-    background-image: url(../../images/icon-moon.svg);
-  }
-  &-dark-theme {
-    background-image: url(../../images/icon-sun.svg);
-  }
   &-completed {
     background: url(../../images/icon-check.svg),
       linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
