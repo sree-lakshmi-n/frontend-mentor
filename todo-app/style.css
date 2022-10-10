@@ -34,15 +34,17 @@ body {
 .btn {
   background-color: transparent;
   border: none;
-  padding: 1.8rem; }
+  padding: 1.8rem;
+  background-repeat: no-repeat;
+  background-position: center; }
   .btn-checkbox {
     border: 1px solid #e4e5f1;
     border-radius: 50%;
     padding: 1.2rem; }
   .btn-light-theme {
-    background-image: url(../../images/icon-moon.svg);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../../images/icon-moon.svg); }
+  .btn-dark-theme {
+    background-image: url(../../images/icon-sun.svg); }
 
 .header {
   padding-top: 7.2rem;
