@@ -10,6 +10,10 @@
     border-radius: 50%;
     padding: 1.2rem;
   }
+  &-close {
+    background-image: url(../../images/icon-cross.svg);
+    color: $color-light-dark-grayish-blue;
+  }
   &-light-theme {
     background-image: url(../../images/icon-moon.svg);
   }
