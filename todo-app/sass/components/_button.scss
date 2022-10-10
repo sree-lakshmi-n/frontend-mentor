@@ -4,6 +4,7 @@
   padding: 1.8rem;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   &-checkbox {
     border: 1px solid $color-light-very-light-grayish-blue;
@@ -19,5 +20,11 @@
   }
   &-dark-theme {
     background-image: url(../../images/icon-sun.svg);
+  }
+  &-completed {
+    background: url(../../images/icon-check.svg),
+      linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
