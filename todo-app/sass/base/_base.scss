@@ -15,6 +15,10 @@ body {
   background-position: top center;
   height: 100vh;
 }
+.body-bg-dark {
+  background-color: $color-dark-very-dark-blue;
+  background-image: url(../../images/bg-desktop-dark.jpg);
+}
 .container {
   width: 40%;
   margin: auto;
