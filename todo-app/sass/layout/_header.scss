@@ -1,0 +1,17 @@
+.header {
+  padding-top: 7.2rem;
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-light-very-light-gray;
+  }
+  &__theme-toggle-button {
+    background-image: url(../../images/icon-moon.svg);
+    padding: 5em;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
