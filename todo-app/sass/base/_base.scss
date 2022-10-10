@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  background-color: $color-light-very-light-gray;
   background-image: url(../../images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
   background-size: 100% 35vh;
@@ -17,7 +18,4 @@ body {
 .container {
   width: 40%;
   margin: auto;
-}
-input[type="text"] {
-  border: none;
 }
