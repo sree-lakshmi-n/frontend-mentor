@@ -14,6 +14,7 @@
   &-close {
     background-image: url(../../images/icon-cross.svg);
     color: $color-light-dark-grayish-blue;
+    opacity: 0;
   }
   &-light-theme {
     background-image: url(../../images/icon-moon.svg);
