@@ -16,6 +16,10 @@ body {
   background-position: top center;
   height: 100vh; }
 
+.body-bg-dark {
+  background-color: #161722;
+  background-image: url(../../images/bg-desktop-dark.jpg); }
+
 .container {
   width: 40%;
   margin: auto; }
@@ -86,6 +90,8 @@ input[type="text"] {
       color: #9394a5; }
   .section-to-do__items:hover .btn-close {
     opacity: 1; }
+  .section-to-do__items-dark {
+    background-color: #25273c; }
 
 .textbox-completed {
   text-decoration: line-through;
