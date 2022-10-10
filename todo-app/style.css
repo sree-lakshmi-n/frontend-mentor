@@ -9,6 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  background-color: #fafafa;
   background-image: url(../../images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
   background-size: 100% 35vh;
@@ -18,9 +19,6 @@ body {
 .container {
   width: 40%;
   margin: auto; }
-
-input[type="text"] {
-  border: none; }
 
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -48,18 +46,37 @@ input[type="text"] {
     border: 1px solid #e4e5f1;
     border-radius: 50%;
     padding: 1.2rem; }
+  .btn-close {
+    background-image: url(../../images/icon-cross.svg);
+    color: #9394a5; }
   .btn-light-theme {
     background-image: url(../../images/icon-moon.svg); }
   .btn-dark-theme {
     background-image: url(../../images/icon-sun.svg); }
 
+.section-to-do__new {
+  border-radius: 0.9rem;
+  margin-bottom: 3.2rem; }
+
+.section-to-do__list {
+  border-radius: 0.9rem;
+  box-shadow: 0px 20px 50px rgba(210, 211, 219, 0.5);
+  overflow: hidden; }
+
 .section-to-do__items {
   background-color: #fafafa;
   padding: 1.8rem;
-  border-radius: 0.9rem;
+  border-bottom: 0.8px solid #e4e5f1;
   display: flex;
   align-items: center;
   gap: 1.2rem; }
+  .section-to-do__items-textbox {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    color: #484b6a; }
+    .section-to-do__items-textbox::placeholder {
+      color: #9394a5; }
 
 .header {
   padding-top: 7.2rem;
