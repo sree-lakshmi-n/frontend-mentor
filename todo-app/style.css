@@ -54,10 +54,6 @@ input[type="text"] {
     background-image: url(../../images/icon-cross.svg);
     color: #9394a5;
     opacity: 0; }
-  .btn-light-theme {
-    background-image: url(../../images/icon-moon.svg); }
-  .btn-dark-theme {
-    background-image: url(../../images/icon-sun.svg); }
   .btn-completed {
     background: url(../../images/icon-check.svg), linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
     background-position: center center;
@@ -106,7 +102,10 @@ input[type="text"] {
     letter-spacing: 4.8px;
     color: #fafafa; }
   .header__toggle-button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    background-image: url(../../images/icon-moon.svg); }
+  .header-toggle-button-dark {
+    background-image: url(../../images/icon-sun.svg); }
 
 .section-to-do__new {
   border-radius: 0.9rem;
