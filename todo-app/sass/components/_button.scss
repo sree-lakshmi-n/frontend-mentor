@@ -2,6 +2,12 @@
   background-color: transparent;
   border: none;
   padding: 1.8rem;
+
+  &-checkbox {
+    border: 1px solid $color-light-very-light-grayish-blue;
+    border-radius: 50%;
+    padding: 1.2rem;
+  }
   &-light-theme {
     background-image: url(../../images/icon-moon.svg);
     background-repeat: no-repeat;
