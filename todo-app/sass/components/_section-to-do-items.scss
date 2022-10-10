@@ -35,6 +35,10 @@
   &:hover .btn-close {
     opacity: 1;
   }
+
+  &-dark {
+    background-color: $color-dark-very-dark-desaturated-blue;
+  }
 }
 .textbox-completed {
   text-decoration: line-through;
