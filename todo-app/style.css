@@ -19,11 +19,18 @@ body {
   width: 40%;
   margin: auto; }
 
+input[type="text"] {
+  border: none; }
+
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.8rem;
   line-height: 1;
   font-weight: 400; }
+
+input[type="text"] {
+  font-size: inherit;
+  font-family: inherit; }
 
 .attribution {
   font-size: 11px;
