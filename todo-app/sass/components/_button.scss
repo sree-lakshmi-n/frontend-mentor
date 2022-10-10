@@ -1,0 +1,10 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 1.8rem;
+  &-light-theme {
+    background-image: url(../../images/icon-moon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
