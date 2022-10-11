@@ -23,6 +23,9 @@ body {
 .container {
   width: 40%;
   margin: auto; }
+  @media (max-width: 600px) {
+    .container {
+      width: 90%; } }
 
 body {
   font-family: "Josefin Sans", sans-serif;
