@@ -56,12 +56,15 @@ input[type="text"] {
     padding: 1.2rem; }
     .btn-checkbox-dark {
       border: 1px solid #393a4c; }
+    .btn-checkbox:hover {
+      border: 1px solid #57ddff; }
   .btn-close {
     background-image: url(../../images/icon-cross.svg);
-    color: #9394a5;
     opacity: 0; }
+    .btn-close-dark {
+      filter: invert(50%); }
   .btn-completed {
-    background: url(../../images/icon-check.svg), linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
+    background: url(../../images/icon-check.svg), linear-gradient(135deg, #57ddff 0%, #bf59f2 100%);
     background-position: center center;
     background-repeat: no-repeat; }
 
