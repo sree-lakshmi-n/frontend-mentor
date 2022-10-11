@@ -1,4 +1,5 @@
 `use strict`;
+
 const themeToggleBtn = document.getElementsByClassName(
   "header__toggle-button"
 )[0];
@@ -17,6 +18,16 @@ const todoMetrics = document.getElementsByClassName(
 const todoInstructions = document.getElementsByClassName(
   "section-to-do__instructions"
 )[0];
+
+// Helper classes to toggle theme
+const toggleElementTheme = (element, classToBeToggledWith) => {
+  element.classList.toggle(classToBeToggledWith);
+};
+const toggleListTheme = (list, classToBeToggledWith) => {
+  Array.from(list).forEach((e) => {
+    e.classList.toggle(classToBeToggledWith);
+  });
+};
 
 const themeToggle = () => {
   themeToggleBtn.classList.toggle("header-toggle-button-dark");
