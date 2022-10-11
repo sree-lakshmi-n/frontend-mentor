@@ -9,7 +9,8 @@ const themeToggleBtn = _("header__toggle-button")[0];
 const todoSectionList = _("section-to-do__list")[0];
 const todoItems = _("section-to-do__items");
 const todoTextBox = _("section-to-do__items-textbox");
-const todoCheckBox = _("btn-checkbox");
+const btnCheckBox = _("btn-checkbox");
+const btnClose = _("btn-close");
 const textCompleted = _("textbox-completed");
 const todoMetrics = _("section-to-do__metrics")[0];
 const todoInstructions = _("section-to-do__instructions")[0];
@@ -33,7 +34,8 @@ const themeToggle = () => {
 
   toggleListTheme(todoItems, "section-to-do__items-dark");
   toggleListTheme(todoTextBox, "section-to-do__items-textbox-dark");
-  toggleListTheme(todoCheckBox, "btn-checkbox-dark");
+  toggleListTheme(btnCheckBox, "btn-checkbox-dark");
+  toggleListTheme(btnClose, "btn-close-dark");
   toggleListTheme(textCompleted, "textbox-completed-dark");
 };
 
