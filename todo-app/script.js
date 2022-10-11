@@ -1,23 +1,18 @@
 `use strict`;
 
-const themeToggleBtn = document.getElementsByClassName(
-  "header__toggle-button"
-)[0];
-const todoSectionList = document.getElementsByClassName(
-  "section-to-do__list"
-)[0];
-const todoItems = document.getElementsByClassName("section-to-do__items");
-const todoTextBox = document.getElementsByClassName(
-  "section-to-do__items-textbox"
-);
-const todoCheckBox = document.getElementsByClassName("btn-checkbox");
-const textCompleted = document.getElementsByClassName("textbox-completed");
-const todoMetrics = document.getElementsByClassName(
-  "section-to-do__metrics"
-)[0];
-const todoInstructions = document.getElementsByClassName(
-  "section-to-do__instructions"
-)[0];
+// Helper class to fetch elements by class name
+const _ = (className) => {
+  return document.getElementsByClassName(className);
+};
+
+const themeToggleBtn = _("header__toggle-button")[0];
+const todoSectionList = _("section-to-do__list")[0];
+const todoItems = _("section-to-do__items");
+const todoTextBox = _("section-to-do__items-textbox");
+const todoCheckBox = _("btn-checkbox");
+const textCompleted = _("textbox-completed");
+const todoMetrics = _("section-to-do__metrics")[0];
+const todoInstructions = _("section-to-do__instructions")[0];
 
 // Helper classes to toggle theme
 const toggleElementTheme = (element, classToBeToggledWith) => {
