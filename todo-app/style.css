@@ -72,8 +72,6 @@ input[type="text"] {
     display: flex;
     gap: 1.2rem;
     list-style-type: none; }
-    .section-to-do__metrics-nav-list :last-child {
-      margin-left: auto; }
   .section-to-do__metrics-dark.section-to-do__items {
     color: #4d5066;
     border-bottom: none; }
