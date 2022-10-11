@@ -30,24 +30,16 @@ const toggleListTheme = (list, classToBeToggledWith) => {
 };
 
 const themeToggle = () => {
-  themeToggleBtn.classList.toggle("header-toggle-button-dark");
+  toggleElementTheme(themeToggleBtn, "header-toggle-button-dark");
+  toggleElementTheme(document.body, "body-bg-dark");
+  toggleElementTheme(todoSectionList, "section-to-do__list-dark");
+  toggleElementTheme(todoMetrics, "section-to-do__metrics-dark");
+  toggleElementTheme(todoInstructions, "section-to-do__instructions-dark");
 
-  document.body.classList.toggle("body-bg-dark");
-  todoSectionList.classList.toggle("section-to-do__list-dark");
-  Array.from(todoItems).forEach((e) => {
-    e.classList.toggle("section-to-do__items-dark");
-  });
-  Array.from(todoTextBox).forEach((e) => {
-    e.classList.toggle("section-to-do__items-textbox-dark");
-  });
-  Array.from(todoCheckBox).forEach((e) => {
-    e.classList.toggle("btn-checkbox-dark");
-  });
-  Array.from(textCompleted).forEach((e) => {
-    e.classList.toggle("textbox-completed-dark");
-  });
-  todoMetrics.classList.toggle("section-to-do__metrics-dark");
-  todoInstructions.classList.toggle("section-to-do__instructions-dark");
+  toggleListTheme(todoItems, "section-to-do__items-dark");
+  toggleListTheme(todoTextBox, "section-to-do__items-textbox-dark");
+  toggleListTheme(todoCheckBox, "btn-checkbox-dark");
+  toggleListTheme(textCompleted, "textbox-completed-dark");
 };
 
 themeToggleBtn.addEventListener("click", themeToggle);
