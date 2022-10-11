@@ -10,6 +10,10 @@
     border: 1px solid $color-light-very-light-grayish-blue;
     border-radius: 50%;
     padding: 1.2rem;
+
+    &-dark {
+      border: 1px solid $color-dark-extra-dark-grayish-blue;
+    }
   }
   &-close {
     background-image: url(../../images/icon-cross.svg);
