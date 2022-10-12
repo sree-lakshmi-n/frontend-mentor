@@ -54,11 +54,13 @@
             <button class="section-to-do__items-btn btn btn-close"></button>
           </div>
 
-          <div class="section-to-do__metrics section-to-do__items">
+          <div class="section-to-do__metrics">
             <div class="section-to-do__metrics-items-left">
               <span class="items-left">5</span> items left
             </div>
-            <nav class="section-to-do__metrics-nav">
+            <nav
+              class="section-to-do__metrics-nav section-to-do__metrics-nav-inside"
+            >
               <ul class="section-to-do__metrics-nav-list">
                 <li class="active">All</li>
                 <li>Active</li>
@@ -68,6 +70,15 @@
             <div class="section-to-do__metrics-clear-btn">Clear Completed</div>
           </div>
         </div>
+        <nav
+          class="section-to-do__metrics-nav section-to-do__metrics-nav-outside"
+        >
+          <ul class="section-to-do__metrics-nav-list">
+            <li class="active">All</li>
+            <li>Active</li>
+            <li>Completed</li>
+          </ul>
+        </nav>
         <div class="section-to-do__instructions">
           Drag and drop to reorder list
         </div>
