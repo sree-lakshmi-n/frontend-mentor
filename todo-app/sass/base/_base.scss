@@ -11,13 +11,25 @@ body {
   background-color: $color-light-very-light-gray;
   background-image: url(../../images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 35vh;
+  background-size: 100% 40vh;
   background-position: top center;
   height: 100vh;
+
+  @media (max-width: 600px) {
+    & {
+      background-image: url(../../images/bg-mobile-light.jpg);
+    }
+  }
 }
 .body-bg-dark {
   background-color: $color-dark-very-dark-blue;
   background-image: url(../../images/bg-desktop-dark.jpg);
+
+  @media (max-width: 600px) {
+    & {
+      background-image: url(../../images/bg-mobile-dark.jpg);
+    }
+  }
 }
 .container {
   width: 40%;
