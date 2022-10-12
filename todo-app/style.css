@@ -12,13 +12,19 @@ body {
   background-color: #fafafa;
   background-image: url(../../images/bg-desktop-light.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 35vh;
+  background-size: 100% 40vh;
   background-position: top center;
   height: 100vh; }
+  @media (max-width: 600px) {
+    body {
+      background-image: url(../../images/bg-mobile-light.jpg); } }
 
 .body-bg-dark {
   background-color: #161722;
   background-image: url(../../images/bg-desktop-dark.jpg); }
+  @media (max-width: 600px) {
+    .body-bg-dark {
+      background-image: url(../../images/bg-mobile-dark.jpg); } }
 
 .container {
   width: 40%;
@@ -167,7 +173,10 @@ input[type="text"] {
 
 .section-to-do__new {
   border-radius: 0.9rem;
-  margin-bottom: 3.2rem; }
+  margin-bottom: 3.2rem;
+  box-shadow: 0px 20px 50px rgba(210, 211, 219, 0.5); }
+  .section-to-do__new-dark {
+    box-shadow: 0px 20px 50px rgba(37, 39, 60, 0.5); }
 
 .section-to-do__list {
   border-radius: 0.9rem;
