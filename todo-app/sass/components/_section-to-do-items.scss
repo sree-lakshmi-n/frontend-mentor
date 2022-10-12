@@ -1,6 +1,7 @@
 .section-to-do__metrics {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1.2rem;
   color: $color-light-dark-grayish-blue;
   padding: 1.8rem;
@@ -28,7 +29,7 @@
 
     @media (max-width: 600px) {
       & {
-        background-color: #fff;
+        background-color: $color-light-very-light-gray;
         box-shadow: 0px 20px 50px rgba($color-light-light-grayish-blue, 0.5);
         border-radius: 0.9rem;
       }
