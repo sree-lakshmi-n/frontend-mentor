@@ -6,6 +6,7 @@ const _ = (className) => {
 };
 
 const themeToggleBtn = _("header__toggle-button")[0];
+const todoSectionNew = _("section-to-do__new")[0];
 const todoSectionList = _("section-to-do__list")[0];
 const todoItems = _("section-to-do__items");
 const todoTextBox = _("section-to-do__items-textbox");
@@ -30,6 +31,7 @@ const toggleListTheme = (list, classToBeToggledWith) => {
 const themeToggle = () => {
   toggleElementTheme(themeToggleBtn, "header-toggle-button-dark");
   toggleElementTheme(document.body, "body-bg-dark");
+  toggleElementTheme(todoSectionNew, "section-to-do__new-dark");
   toggleElementTheme(todoSectionList, "section-to-do__list-dark");
   toggleElementTheme(todoMetrics, "section-to-do__metrics-dark");
   toggleElementTheme(todoClearBtn, "section-to-do__metrics-clear-btn-dark");
