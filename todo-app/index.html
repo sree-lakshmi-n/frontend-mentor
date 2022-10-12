@@ -11,7 +11,19 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
     <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <!-- A small hack that enables the use of touch events on mobiles/ ipads using the jQuery UI user interface library. 
+    Source: https://github.com/furf/jquery-ui-touch-punch &
+    https://cdnjs.com/libraries/jqueryui-touch-punch
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="script.js" defer></script>
     <title>Todo app</title>
   </head>
@@ -30,13 +42,13 @@
             class="section-to-do__items-textbox"
           />
         </div>
-        <div class="section-to-do__list">
-          <div class="section-to-do__items" draggable="true">
+        <ul id="sortable" class="section-to-do__list">
+          <li class="section-to-do__items">
             <button class="section-to-do__items-btn btn btn-checkbox"></button>
             <p class="section-to-do__items-textbox">Jog around the park 3x</p>
             <button class="section-to-do__items-btn btn btn-close"></button>
-          </div>
-          <div class="section-to-do__items" draggable="true">
+          </li>
+          <li class="section-to-do__items">
             <button
               class="section-to-do__items-btn btn btn-checkbox btn-completed"
             ></button>
@@ -44,9 +56,9 @@
               10 mins meditation
             </p>
             <button class="section-to-do__items-btn btn btn-close"></button>
-          </div>
+          </li>
 
-          <div class="section-to-do__metrics">
+          <li class="section-to-do__metrics drag-disabled">
             <div class="section-to-do__metrics-items-left">
               <span class="items-left">5</span> items left
             </div>
@@ -60,8 +72,8 @@
               </ul>
             </nav>
             <div class="section-to-do__metrics-clear-btn">Clear Completed</div>
-          </div>
-        </div>
+          </li>
+        </ul>
         <nav
           class="section-to-do__metrics-nav section-to-do__metrics-nav-outside"
         >
