@@ -29,6 +29,9 @@ body {
 .container {
   width: 40%;
   margin: auto; }
+  @media (max-width: 1000px) {
+    .container {
+      width: 60%; } }
   @media (max-width: 600px) {
     .container {
       width: 90%; } }
@@ -80,6 +83,7 @@ input[type="text"] {
 .section-to-do__metrics {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1.2rem;
   color: #9394a5;
   padding: 1.8rem; }
@@ -99,7 +103,7 @@ input[type="text"] {
     color: #9394a5; }
     @media (max-width: 600px) {
       .section-to-do__metrics-nav-list {
-        background-color: #fff;
+        background-color: #fafafa;
         box-shadow: 0px 20px 50px rgba(210, 211, 219, 0.5);
         border-radius: 0.9rem; } }
     .section-to-do__metrics-nav-list li:hover {
@@ -183,8 +187,10 @@ input[type="text"] {
   box-shadow: 0px 20px 50px rgba(210, 211, 219, 0.5);
   overflow: hidden;
   margin-bottom: 1.2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #fafafa; }
   .section-to-do__list-dark {
+    background-color: #25273c;
     box-shadow: 0px 20px 50px rgba(37, 39, 60, 0.5); }
 
 .section-to-do__instructions {
