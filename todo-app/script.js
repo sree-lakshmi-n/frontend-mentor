@@ -47,11 +47,43 @@ const themeToggle = () => {
 
 themeToggleBtn.addEventListener("click", themeToggle);
 
-// Drag and drop functionality
+// Drag and drop functionality (Jquery)
 
 $(function () {
   $("#sortable").sortable({
     items: ".section-to-do__items",
   });
   $("#sortable").disableSelection();
+});
+
+// Adding new to-do items
+const newToDo = _("new_to-do")[0];
+
+const addNewToDo = (el) => {
+  const todo = document.createElement("li");
+  todo.setAttribute("class", "section-to-do__items");
+  const todoCheckBox = document.createElement("button");
+  todoCheckBox.setAttribute(
+    "class",
+    "section-to-do__items-btn btn btn-checkbox"
+  );
+  const todoText = document.createElement("p");
+  todoText.setAttribute("class", "section-to-do__items-textbox");
+  todoText.textContent = newToDo.value.trim();
+  const todoClose = document.createElement("button");
+  todoClose.setAttribute("class", "section-to-do__items-btn btn btn-close");
+
+  todo.appendChild(todoCheckBox);
+  todo.appendChild(todoText);
+  todo.appendChild(todoClose);
+
+  newToDo.appendChild(todo);
+
+  console.log("append");
+};
+
+newToDo.addEventListener("keypress", (event, el) => {
+  if (event.key === "Enter" && newToDo.value.trim()) {
+    addNewToDo(el);
+  }
 });
