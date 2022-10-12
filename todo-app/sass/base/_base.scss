@@ -35,6 +35,11 @@ body {
   width: 40%;
   margin: auto;
 
+  @media (max-width: 1000px) {
+    & {
+      width: 60%;
+    }
+  }
   @media (max-width: 600px) {
     & {
       width: 90%;
