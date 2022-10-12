@@ -44,3 +44,12 @@ const themeToggle = () => {
 };
 
 themeToggleBtn.addEventListener("click", themeToggle);
+
+// Drag and drop functionality
+
+$(function () {
+  $("#sortable").sortable({
+    items: ".section-to-do__items",
+  });
+  $("#sortable").disableSelection();
+});
