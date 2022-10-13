@@ -6,6 +6,8 @@
   color: $color-light-dark-grayish-blue;
   padding: 1.8rem;
   position: relative;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
 
   &-nav {
     position: relative;
