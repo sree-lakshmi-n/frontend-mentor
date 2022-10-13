@@ -67,7 +67,7 @@ const addNewToDo = (el) => {
     "class",
     "section-to-do__items-btn btn btn-checkbox"
   );
-  todoCheckBox.setAttribute("onclick", "toggleCompleted()");
+  todoCheckBox.setAttribute("onclick", "toggleCompleted(this)");
   const todoText = document.createElement("p");
   todoText.setAttribute("class", "section-to-do__items-textbox");
   todoText.textContent = newToDo.value.trim();
@@ -94,4 +94,10 @@ newToDo.addEventListener("keypress", (event, el) => {
 // Close button functionality
 const removeToDo = (element) => {
   element.parentElement.remove();
+};
+
+// Completed btn functionality
+const toggleCompleted = (element) => {
+  element.classList.toggle("btn-completed");
+  element.nextSibling.classList.toggle("textbox-completed");
 };
