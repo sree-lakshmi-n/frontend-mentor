@@ -77,9 +77,10 @@ const addNewToDo = (el) => {
   todo.appendChild(todoText);
   todo.appendChild(todoClose);
 
-  newToDo.appendChild(todo);
+  todoSectionList.prepend(todo);
 
-  console.log("append");
+  // Reset value of input box
+  newToDo.value = "";
 };
 
 newToDo.addEventListener("keypress", (event, el) => {
