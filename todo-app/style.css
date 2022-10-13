@@ -124,6 +124,8 @@ input[type="text"] {
     color: #484b6a; }
   .section-to-do__metrics-clear-btn-dark:hover {
     color: #e4e5f1; }
+  .section-to-do__metrics-clear-btn:active {
+    color: #3a7bfd; }
   .section-to-do__metrics-dark {
     border-bottom: none;
     background-color: #25273c;

@@ -59,8 +59,12 @@
     &:hover {
       color: $color-light-very-dark-grayish-blue;
     }
+
     &-dark:hover {
       color: $color-dark-very-light-grayish-blue;
+    }
+    &:active {
+      color: $color-primary-bright-blue;
     }
   }
   &-dark {
