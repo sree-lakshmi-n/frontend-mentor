@@ -67,11 +67,13 @@ const addNewToDo = (el) => {
     "class",
     "section-to-do__items-btn btn btn-checkbox"
   );
+  todoCheckBox.setAttribute("onclick", "toggleCompleted()");
   const todoText = document.createElement("p");
   todoText.setAttribute("class", "section-to-do__items-textbox");
   todoText.textContent = newToDo.value.trim();
   const todoClose = document.createElement("button");
   todoClose.setAttribute("class", "section-to-do__items-btn btn btn-close");
+  todoClose.setAttribute("onclick", "removeToDo(this)");
 
   todo.appendChild(todoCheckBox);
   todo.appendChild(todoText);
@@ -88,3 +90,8 @@ newToDo.addEventListener("keypress", (event, el) => {
     addNewToDo(el);
   }
 });
+
+// Close button functionality
+const removeToDo = (element) => {
+  element.parentElement.remove();
+};
