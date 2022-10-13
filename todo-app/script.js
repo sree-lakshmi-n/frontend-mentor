@@ -118,20 +118,50 @@ const toggleCompleted = (element) => {
   modifyItemsLeft();
 };
 
-// Removing active class from all list elements
-const removeActiveClass = () => {
-  Array.from(todoMetricsList.children).forEach((e) => {
-    e.classList.remove("active");
+// Adding and Removing class from all list elements
+const addClass = (elem, className) => {
+  Array.from(elem).forEach((e) => {
+    e.classList.add(className);
+  });
+};
+const addClassToParent = (elem, className) => {
+  Array.from(elem).forEach((e) => {
+    e.parentElement.classList.add(className);
+  });
+};
+const removeClass = (elem, className) => {
+  Array.from(elem).forEach((e) => {
+    e.classList.remove(className);
+  });
+};
+const removeClassFromParent = (elem, className) => {
+  Array.from(elem).forEach((e) => {
+    e.parentElement.classList.remove(className);
   });
 };
 
 // Metric Nav list filtering functionality
-const filterList = (clickedElem) => {
+
+const filterList = (metricBtn) => {
+  if (metricBtn.classList.contains("btn-all")) {
+    removeClass(todoItems, "hide");
+  } else if (metricBtn.classList.contains("btn-active")) {
+    removeClass(todoItems, "hide");
+    addClassToParent(todoCompleted, "hide");
+  } else {
+    addClass(todoItems, "hide");
+    todoSectionNew.classList.remove("hide");
+    removeClassFromParent(todoCompleted, "hide");
+  }
+};
+
+const filterByMetric = (clickedElem) => {
   const metricBtn = clickedElem.target;
-  removeActiveClass();
+  removeClass(todoMetricsList.children, "active");
   metricBtn.classList.add("active");
+  filterList(metricBtn);
 };
 
 Array.from(todoMetricsList.children).forEach((e) => {
-  e.addEventListener("click", filterList, e);
+  e.addEventListener("click", filterByMetric, e);
 });
