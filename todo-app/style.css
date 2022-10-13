@@ -86,36 +86,40 @@ input[type="text"] {
   align-items: center;
   gap: 1.2rem;
   color: #9394a5;
-  padding: 1.8rem; }
-  .section-to-do__metrics-nav-outside {
-    display: none; }
-  @media (max-width: 600px) {
-    .section-to-do__metrics-nav-inside {
-      display: none; }
-    .section-to-do__metrics-nav-outside {
-      display: block; } }
-  .section-to-do__metrics-nav-list {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1.2rem;
-    padding: 1.8rem;
-    list-style-type: none;
-    color: #9394a5; }
+  padding: 1.8rem;
+  position: relative; }
+  .section-to-do__metrics-nav {
+    position: relative; }
     @media (max-width: 600px) {
-      .section-to-do__metrics-nav-list {
-        background-color: #fafafa;
-        box-shadow: 0px 20px 50px rgba(210, 211, 219, 0.5);
-        border-radius: 0.9rem; } }
-    .section-to-do__metrics-nav-list li:hover {
-      color: #484b6a; }
-    .section-to-do__metrics-nav-list-dark {
-      background-color: #25273c;
-      color: #4d5066;
-      box-shadow: 0px 20px 50px rgba(37, 39, 60, 0.5); }
-      .section-to-do__metrics-nav-list-dark li:hover {
-        color: #e4e5f1; }
-    .section-to-do__metrics-nav-list .active {
-      color: #3a7bfd; }
+      .section-to-do__metrics-nav {
+        position: absolute;
+        top: 125%;
+        left: 0;
+        width: 100%; } }
+    .section-to-do__metrics-nav-list {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1.2rem;
+      padding: 1.8rem;
+      list-style-type: none;
+      color: #9394a5; }
+      @media (max-width: 600px) {
+        .section-to-do__metrics-nav-list {
+          background-color: #fafafa;
+          box-shadow: 0px 20px 50px rgba(210, 211, 219, 0.5);
+          border-radius: 0.9rem; } }
+      .section-to-do__metrics-nav-list li:hover {
+        color: #484b6a; }
+      .section-to-do__metrics-nav-list-dark {
+        background-color: #25273c;
+        color: #4d5066;
+        box-shadow: 0px 20px 50px rgba(37, 39, 60, 0.5); }
+        .section-to-do__metrics-nav-list-dark li:hover {
+          color: #e4e5f1; }
+      .section-to-do__metrics-nav-list li:active {
+        color: #3a7bfd; }
+      .section-to-do__metrics-nav-list li.active {
+        color: #3a7bfd; }
   .section-to-do__metrics-clear-btn:hover {
     color: #484b6a; }
   .section-to-do__metrics-clear-btn-dark:hover {
@@ -131,7 +135,9 @@ input[type="text"] {
   border-bottom: 0.8px solid #e4e5f1;
   display: flex;
   align-items: center;
-  gap: 1.2rem; }
+  gap: 1.2rem;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit; }
   .section-to-do__items.section-to-do__new {
     border: none; }
   .section-to-do__items-textbox {
@@ -185,7 +191,6 @@ input[type="text"] {
 .section-to-do__list {
   border-radius: 0.9rem;
   box-shadow: 0px 20px 50px rgba(210, 211, 219, 0.5);
-  overflow: hidden;
   margin-bottom: 1.2rem;
   cursor: pointer;
   background-color: #fafafa; }
@@ -198,5 +203,8 @@ input[type="text"] {
   font-size: 1.4rem;
   text-align: center;
   margin-top: 3.2rem; }
+  @media (max-width: 600px) {
+    .section-to-do__instructions {
+      margin-top: 9.6rem; } }
   .section-to-do__instructions-dark {
     color: #4d5066; }
