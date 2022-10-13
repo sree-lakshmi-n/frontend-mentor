@@ -165,3 +165,12 @@ const filterByMetric = (clickedElem) => {
 Array.from(todoMetricsList.children).forEach((e) => {
   e.addEventListener("click", filterByMetric, e);
 });
+
+// Clear Completed btn functionality
+const clearCompleted = () => {
+  Array.from(todoCompleted).forEach((e) => {
+    e.parentElement.remove();
+  });
+};
+
+todoClearBtn.addEventListener("click", clearCompleted);
