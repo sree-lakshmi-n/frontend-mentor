@@ -29,6 +29,11 @@ const modifyItemsLeft = () => {
 
 modifyItemsLeft();
 
+// Find current theme
+const isCurrentThemeDark = () => {
+  return themeToggleBtn.classList.contains("header-toggle-button-dark");
+};
+
 // Helper classes to toggle theme
 const toggleElementTheme = (element, classToBeToggledWith) => {
   element.classList.toggle(classToBeToggledWith);
@@ -72,19 +77,43 @@ const newToDo = _("new_to-do")[0];
 
 const addNewToDo = (el) => {
   const todo = document.createElement("li");
-  todo.setAttribute("class", "section-to-do__items");
+
   const todoCheckBox = document.createElement("button");
-  todoCheckBox.setAttribute(
-    "class",
-    "section-to-do__items-btn btn btn-checkbox"
-  );
+
   todoCheckBox.setAttribute("onclick", "toggleCompleted(this)");
   const todoText = document.createElement("p");
-  todoText.setAttribute("class", "section-to-do__items-textbox");
+
   todoText.textContent = newToDo.value.trim();
   const todoClose = document.createElement("button");
-  todoClose.setAttribute("class", "section-to-do__items-btn btn btn-close");
+
   todoClose.setAttribute("onclick", "removeToDo(this)");
+
+  if (isCurrentThemeDark()) {
+    todo.setAttribute(
+      "class",
+      "section-to-do__items section-to-do__items-dark"
+    );
+    todoCheckBox.setAttribute(
+      "class",
+      "section-to-do__items-btn btn btn-checkbox btn-checkbox-dark"
+    );
+    todoText.setAttribute(
+      "class",
+      "section-to-do__items-textbox section-to-do__items-textbox-dark"
+    );
+    todoClose.setAttribute(
+      "class",
+      "section-to-do__items-btn btn btn-close btn-close-dark"
+    );
+  } else {
+    todo.setAttribute("class", "section-to-do__items");
+    todoCheckBox.setAttribute(
+      "class",
+      "section-to-do__items-btn btn btn-checkbox"
+    );
+    todoText.setAttribute("class", "section-to-do__items-textbox");
+    todoClose.setAttribute("class", "section-to-do__items-btn btn btn-close");
+  }
 
   todo.appendChild(todoCheckBox);
   todo.appendChild(todoText);
@@ -115,6 +144,9 @@ const removeToDo = (element) => {
 const toggleCompleted = (element) => {
   element.classList.toggle("btn-completed");
   element.nextSibling.classList.toggle("textbox-completed");
+  if (isCurrentThemeDark()) {
+    element.nextSibling.classList.toggle("textbox-completed-dark");
+  }
   modifyItemsLeft();
 };
 
