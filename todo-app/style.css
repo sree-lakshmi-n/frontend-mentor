@@ -165,6 +165,9 @@ input[type="text"] {
   .textbox-completed-dark {
     color: #4d5066; }
 
+.hide {
+  display: none; }
+
 .header {
   padding-top: 7.2rem;
   display: flex;
