@@ -14,7 +14,7 @@ const btnCheckBox = _("btn-checkbox");
 const btnClose = _("btn-close");
 const textCompleted = _("textbox-completed");
 const todoMetrics = _("section-to-do__metrics")[0];
-const todoMetricsList = _("section-to-do__metrics-nav-list");
+const todoMetricsList = _("section-to-do__metrics-nav-list")[0];
 const todoClearBtn = _("section-to-do__metrics-clear-btn")[0];
 const todoInstructions = _("section-to-do__instructions")[0];
 
@@ -34,11 +34,11 @@ const themeToggle = () => {
   toggleElementTheme(todoSectionNew, "section-to-do__new-dark");
   toggleElementTheme(todoSectionList, "section-to-do__list-dark");
   toggleElementTheme(todoMetrics, "section-to-do__metrics-dark");
+  toggleElementTheme(todoMetricsList, "section-to-do__metrics-nav-list-dark");
   toggleElementTheme(todoClearBtn, "section-to-do__metrics-clear-btn-dark");
   toggleElementTheme(todoInstructions, "section-to-do__instructions-dark");
 
   toggleListTheme(todoItems, "section-to-do__items-dark");
-  toggleListTheme(todoMetricsList, "section-to-do__metrics-nav-list-dark");
   toggleListTheme(todoTextBox, "section-to-do__items-textbox-dark");
   toggleListTheme(btnCheckBox, "btn-checkbox-dark");
   toggleListTheme(btnClose, "btn-close-dark");
@@ -101,3 +101,21 @@ const toggleCompleted = (element) => {
   element.classList.toggle("btn-completed");
   element.nextSibling.classList.toggle("textbox-completed");
 };
+
+// Removing active class from all list elements
+const removeActiveClass = () => {
+  Array.from(todoMetricsList.children).forEach((e) => {
+    e.classList.remove("active");
+  });
+};
+
+// Metric Nav list filtering functionality
+const filterList = (clickedElem) => {
+  const metricBtn = clickedElem.target;
+  removeActiveClass();
+  metricBtn.classList.add("active");
+};
+
+Array.from(todoMetricsList.children).forEach((e) => {
+  e.addEventListener("click", filterList, e);
+});
