@@ -18,6 +18,17 @@ const todoMetricsList = _("section-to-do__metrics-nav-list")[0];
 const todoClearBtn = _("section-to-do__metrics-clear-btn")[0];
 const todoInstructions = _("section-to-do__instructions")[0];
 
+const todoCompleted = _("btn-completed");
+
+// Items left calculation
+const itemsLeft = _("items-left")[0];
+
+const modifyItemsLeft = () => {
+  itemsLeft.textContent = todoItems.length - todoCompleted.length - 1;
+};
+
+modifyItemsLeft();
+
 // Helper classes to toggle theme
 const toggleElementTheme = (element, classToBeToggledWith) => {
   element.classList.toggle(classToBeToggledWith);
@@ -83,6 +94,8 @@ const addNewToDo = (el) => {
 
   // Reset value of input box
   newToDo.value = "";
+  // items left
+  modifyItemsLeft();
 };
 
 newToDo.addEventListener("keypress", (event, el) => {
@@ -94,12 +107,15 @@ newToDo.addEventListener("keypress", (event, el) => {
 // Close button functionality
 const removeToDo = (element) => {
   element.parentElement.remove();
+  // items left
+  modifyItemsLeft();
 };
 
 // Completed btn functionality
 const toggleCompleted = (element) => {
   element.classList.toggle("btn-completed");
   element.nextSibling.classList.toggle("textbox-completed");
+  modifyItemsLeft();
 };
 
 // Removing active class from all list elements
