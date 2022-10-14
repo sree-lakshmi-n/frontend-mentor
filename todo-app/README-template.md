@@ -1,6 +1,6 @@
 # Frontend Mentor - Todo app solution
 
-This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW).
 
 ## Table of contents
 
@@ -14,9 +14,6 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,24 +29,39 @@ Users should be able to:
 - Filter by all/active/complete todos
 - Clear all completed todos
 - Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list
+- Drag and drop to reorder items on the list
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<br />
+Desktop - Light
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+<img src="./screenshots/desktop-light.png">
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Desktop - Dark
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+<img src="./screenshots/desktop-dark.png">
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+Desktop - Active - Light
+
+<img src="./screenshots/desktop-active-light.png">
+
+Desktop - Active - Dark
+
+<img src="./screenshots/desktop-active-dark.png">
+
+Mobile - Light
+
+<img src="./screenshots/mobile-light.png" width="50%">
+
+Mobile - Dark
+
+<img src="./screenshots/mobile-dark.png" width="50%">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/sree-lakshmi-n/frontend-mentor/tree/main/todo-app)
+- [Live Site URL](https://to-do-list.sree112.repl.co)
 
 ## My process
 
@@ -60,59 +72,50 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Sass](https://sass-lang.com/) - Sass Preprocessor
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+A small hack that enables the use of touch events on mobiles/ ipads using the jQuery UI user interface library.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+
+Adding elements to the beginning
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+parent.prepend(todo);
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Removing elements from document
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```js
+element.remove();
+```
+
+Drag and drop sorting functionality (Jquery)
+
+```js
+$(function () {
+  $("#sortable").sortable({
+    items: ".section-to-do__items",
+  });
+  $("#sortable").disableSelection();
+});
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Preserve status on reload
+- Build this project as a full-stack application
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Sortable Jquery](https://jqueryui.com/sortable) - Quick method to enable drag and drop sorting.
+- [Touch Punch library](https://cdnjs.com/libraries/jqueryui-touch-punch) - A small hack that enables the use of touch events on mobiles/ ipads using the jQuery UI user interface library.
+- [Touch Punch Github Page](https://github.com/furf/jquery-ui-touch-punch)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@sree-lakshmi-n](https://www.frontendmentor.io/profile/sree-lakshmi-n)
