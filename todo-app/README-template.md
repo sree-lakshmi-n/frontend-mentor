@@ -36,27 +36,27 @@ Users should be able to:
 <br />
 Desktop - Light
 
-<img src="./screenshots/desktop-light.png">
+<img src="./screenshots/desktop-light.png" width="50%">
 
 Desktop - Dark
 
-<img src="./screenshots/desktop-dark.png">
+<img src="./screenshots/desktop-dark.png" width="50%">
 
 Desktop - Active - Light
 
-<img src="./screenshots/desktop-active-light.png">
+<img src="./screenshots/desktop-active-light.png" width="50%">
 
 Desktop - Active - Dark
 
-<img src="./screenshots/desktop-active-dark.png">
+<img src="./screenshots/desktop-active-dark.png" width="50%">
 
 Mobile - Light
 
-<img src="./screenshots/mobile-light.png" width="50%">
+<img src="./screenshots/mobile-light.png" height="300px">
 
 Mobile - Dark
 
-<img src="./screenshots/mobile-dark.png" width="50%">
+<img src="./screenshots/mobile-dark.png" height="300px">
 
 ### Links
 
