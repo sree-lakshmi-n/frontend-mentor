@@ -207,6 +207,7 @@ const clearCompleted = () => {
 
 todoClearBtn.addEventListener("click", clearCompleted);
 
+// Enabling focus state for metric list elements
 Array.from(todoMetricsList).forEach((li) => {
   li.focus();
 });
