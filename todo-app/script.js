@@ -206,3 +206,8 @@ const clearCompleted = () => {
 };
 
 todoClearBtn.addEventListener("click", clearCompleted);
+
+Array.from(todoMetricsList).forEach((li) => {
+  li.focus();
+});
+todoClearBtn.focus();
