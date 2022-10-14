@@ -2,8 +2,11 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  outline: none; }
+  box-sizing: border-box; }
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgba(58, 123, 253, 0.4); }
 
 html {
   font-size: 62.5%; }
@@ -36,6 +39,11 @@ body {
     .container {
       width: 90%; } }
 
+input[type="text"]:focus {
+  box-shadow: none;
+  outline: 0.4rem solid rgba(58, 123, 253, 0.2);
+  outline-offset: 0.8rem; }
+
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.8rem;
@@ -51,7 +59,8 @@ input[type="text"] {
 
 .attribution {
   font-size: 11px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 9.6rem; }
   .attribution a {
     color: #3e52a3; }
 
