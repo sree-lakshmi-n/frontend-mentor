@@ -2,7 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+*:focus {
   outline: none;
+  box-shadow: 0 0 0 0.4rem rgba($color-primary-bright-blue, 0.4);
 }
 html {
   font-size: 62.5%;
@@ -45,4 +48,10 @@ body {
       width: 90%;
     }
   }
+}
+
+input[type="text"]:focus {
+  box-shadow: none;
+  outline: 0.4rem solid rgba($color-primary-bright-blue, 0.2);
+  outline-offset: 0.8rem;
 }
