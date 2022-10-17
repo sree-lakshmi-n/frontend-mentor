@@ -5,3 +5,9 @@
 
 html {
   font-size: 62.5%; }
+
+.home-page {
+  display: none; }
+
+.result-overlay {
+  display: none; }
