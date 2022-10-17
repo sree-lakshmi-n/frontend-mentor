@@ -8,7 +8,40 @@
   </head>
   <body>
     <div class="start-page"></div>
-    <div class="game-page"></div>
+    <div class="game-page">
+      <nav class="top-nav">
+        <div class="logo"><img src="./images/logo.svg" /></div>
+        <div class="player-turn-container">
+          <span class="player-turn"></span> Turn
+        </div>
+        <button class="btn-replay"></button>
+      </nav>
+      <main class="play-grid">
+        <div class="play-grid-cell" data-cell-num="1"></div>
+        <div class="play-grid-cell" data-cell-num="2"></div>
+        <div class="play-grid-cell" data-cell-num="3"></div>
+        <div class="play-grid-cell" data-cell-num="4"></div>
+        <div class="play-grid-cell" data-cell-num="5"></div>
+        <div class="play-grid-cell" data-cell-num="6"></div>
+        <div class="play-grid-cell" data-cell-num="7"></div>
+        <div class="play-grid-cell" data-cell-num="8"></div>
+        <div class="play-grid-cell" data-cell-num="9"></div>
+      </main>
+      <section class="play-stats">
+        <div class="score-container-x">
+          <p class="score-heading">X (<span class="player1"></span>)</p>
+          <span class="score-x"></span>
+        </div>
+        <div class="score-container-ties">
+          <p class="score-heading">ties</p>
+          <span class="score-ties"></span>
+        </div>
+        <div class="score-container-o">
+          <p class="score-heading">O (<span class="player2"></span>)</p>
+          <span class="score-o"></span>
+        </div>
+      </section>
+    </div>
     <div class="result-overlay"></div>
   </body>
 </html>
