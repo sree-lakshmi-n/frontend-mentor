@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
 }
-@mixin flex-center-v-space-btw {
+@mixin flex-end-v-space-btw {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 @mixin flex-with-gap {
   display: flex;
