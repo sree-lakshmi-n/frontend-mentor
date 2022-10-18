@@ -5,7 +5,11 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #192a33; }
+  background-color: #192a33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
 
 html {
   font-size: 62.5%; }
