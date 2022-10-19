@@ -22,8 +22,14 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.6rem;
   margin-bottom: 1.6rem; }
+  .top-nav .logo {
+    width: 60%;
+    align-self: end; }
+    .top-nav .logo img {
+      width: 100%; }
   .top-nav .btn-replay {
     width: 3.2rem;
+    height: 3.2rem;
     justify-self: end;
     background-color: #a9bfc9;
     background-image: url(../../images/icon-restart.svg);

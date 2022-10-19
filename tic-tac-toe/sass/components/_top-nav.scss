@@ -2,8 +2,17 @@
   @include grid-3-cols;
   margin-bottom: 1.6rem;
 
+  .logo {
+    width: 60%;
+    align-self: end;
+
+    img {
+      width: 100%;
+    }
+  }
   .btn-replay {
     width: 3.2rem;
+    height: 3.2rem;
     justify-self: end;
     background-color: $color-echo-blue;
     background-image: url(../../images/icon-restart.svg);
