@@ -9,7 +9,25 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="home-page"></div>
+    <div class="home-page">
+      <div class="logo"><img src="./images/logo.svg" /></div>
+      <div class="game-choices">
+        <p class="game-choices-heading">Pick player 1's mark</p>
+        <div class="game-choices-marks">
+          <div class="game-choices-marks-x">X</div>
+          <div class="game-choices-marks-o">O</div>
+        </div>
+        <div class="game-choices-reminder">Remember: X goes first</div>
+      </div>
+      <div class="game-competitor-choices">
+        <button class="game-competitor-choices-cpu btn">
+          New Game (vs CPU)
+        </button>
+        <button class="game-competitor-choices-player btn">
+          New Game (vs Player)
+        </button>
+      </div>
+    </div>
     <div class="game-page">
       <nav class="top-nav">
         <div class="logo"><img src="./images/logo.svg" /></div>
