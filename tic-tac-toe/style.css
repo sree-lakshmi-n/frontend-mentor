@@ -17,6 +17,22 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif; }
 
+.play-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem; }
+  .play-grid-cell {
+    width: 100%;
+    padding-bottom: 100%;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.4rem rgba #0f2129, 0.3;
+    background-color: #1f3540;
+    border-radius: 1.1rem;
+    -webkit-border-radius: 1.1rem;
+    -moz-border-radius: 1.1rem;
+    -ms-border-radius: 1.1rem;
+    -o-border-radius: 1.1rem; }
+
 .home-page {
   display: none; }
 
@@ -26,28 +42,10 @@ body {
 .result-overlay {
   display: none; }
 
-.play-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.2rem;
-  gap: 1.6rem;
-  margin-bottom: 1.6rem; }
-
-.play-grid-cell {
-  width: 100%;
-  padding-bottom: 100%;
-  border-radius: 1.1rem;
-  box-shadow: 1px 1px 1px 4px rgba(15, 33, 41, 0.3);
-  background-color: #1f3540;
-  -webkit-border-radius: 1.1rem;
-  -moz-border-radius: 1.1rem;
-  -ms-border-radius: 1.1rem;
-  -o-border-radius: 1.1rem; }
-
 .play-stats {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.2rem;
+  gap: 1.6rem;
   gap: 1.6rem;
   text-align: center; }
   .play-stats * {
