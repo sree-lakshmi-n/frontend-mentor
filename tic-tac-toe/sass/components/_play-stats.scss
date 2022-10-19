@@ -1,0 +1,34 @@
+.play-stats {
+  @include grid-3-cols;
+  text-align: center;
+
+  &-item {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: $border-radius-medium;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-border-radius: $border-radius-medium;
+    -moz-border-radius: $border-radius-medium;
+    -ms-border-radius: $border-radius-medium;
+    -o-border-radius: $border-radius-medium;
+  }
+
+  .score-container-x {
+    background-color: $color-light-yellow;
+  }
+  .score-container-ties {
+    background-color: $color-echo-blue;
+  }
+  .score-container-o {
+    background-color: $color-dark-cyan;
+  }
+  .score-heading {
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+  }
+  .score {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}
