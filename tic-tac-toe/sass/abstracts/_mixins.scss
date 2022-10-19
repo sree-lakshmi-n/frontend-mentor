@@ -17,3 +17,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.6rem;
 }
+@mixin apply-border-radius-medium {
+  border-radius: $border-radius-medium;
+  -webkit-border-radius: $border-radius-medium;
+  -moz-border-radius: $border-radius-medium;
+  -ms-border-radius: $border-radius-medium;
+  -o-border-radius: $border-radius-medium;
+}
