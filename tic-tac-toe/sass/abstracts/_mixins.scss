@@ -8,8 +8,9 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-@mixin flex-with-gap {
+@mixin flex-dirn-with-gap($direction) {
   display: flex;
+  flex-direction: $direction;
   gap: 1.2rem;
 }
 @mixin grid-3-cols {
