@@ -15,3 +15,11 @@ const makeGridCells = () => {
 };
 
 addEventListener("DOMContentLoaded", makeGridCells);
+
+// Game Logic
+const currentPlayer = "X";
+const playerTurn = _("player-turn")[0];
+
+const gameSetup = () => {
+  playerTurn.textContent = currentPlayer;
+};
