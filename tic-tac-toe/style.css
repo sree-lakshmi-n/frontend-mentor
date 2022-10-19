@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -20,5 +20,53 @@ body {
 .home-page {
   display: none; }
 
+.game-page {
+  width: 25%; }
+
 .result-overlay {
   display: none; }
+
+.play-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem; }
+
+.play-grid-cell {
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 1.1rem;
+  box-shadow: 1px 1px 1px 4px rgba(15, 33, 41, 0.3);
+  background-color: #1f3540;
+  -webkit-border-radius: 1.1rem;
+  -moz-border-radius: 1.1rem;
+  -ms-border-radius: 1.1rem;
+  -o-border-radius: 1.1rem; }
+
+.play-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+  gap: 1.6rem;
+  text-align: center; }
+  .play-stats * {
+    width: 100%;
+    padding: 0.8rem 0.4rem;
+    border-radius: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500; }
+    .play-stats * span {
+      display: block;
+      font-size: 1.8rem; }
+  .play-stats .score-container-x {
+    background-color: #f1b237; }
+  .play-stats .score-container-ties {
+    background-color: #a9bfc9; }
+  .play-stats .score-container-o {
+    background-color: #31c3bd; }
+
+.score-heading span {
+  padding: 0;
+  margin: 0;
+  display: inline; }
