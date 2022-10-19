@@ -120,3 +120,6 @@ body {
 
 .game-page {
   width: 30%; }
+
+.result-overlay {
+  display: none; }
