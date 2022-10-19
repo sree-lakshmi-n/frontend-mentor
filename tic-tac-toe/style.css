@@ -27,6 +27,24 @@ body {
     align-self: end; }
     .top-nav .logo img {
       width: 100%; }
+  .top-nav .player-turn-container {
+    border-radius: 1.1rem;
+    -webkit-border-radius: 1.1rem;
+    -moz-border-radius: 1.1rem;
+    -ms-border-radius: 1.1rem;
+    -o-border-radius: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: #1f3540;
+    color: #a9bfc9;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
+  .top-nav .player-turn {
+    font-size: 1.8rem;
+    font-weight: 700; }
   .top-nav .btn-replay {
     width: 3.2rem;
     height: 3.2rem;
@@ -37,12 +55,21 @@ body {
     background-position: center;
     background-size: 50%;
     border: none;
-    box-shadow: 0 0.2rem 0 0.1rem rgba(203, 217, 223, 0.5);
+    box-shadow: 0 0.2rem 0 0.1rem rgba(135, 153, 161, 0.5);
     border-radius: 0.7rem;
     -webkit-border-radius: 0.7rem;
     -moz-border-radius: 0.7rem;
     -ms-border-radius: 0.7rem;
     -o-border-radius: 0.7rem; }
+    .top-nav .btn-replay:hover {
+      background-color: #8799a1; }
+    .top-nav .btn-replay:active {
+      box-shadow: none;
+      transform: translateY(0.2rem);
+      -webkit-transform: translateY(0.2rem);
+      -moz-transform: translateY(0.2rem);
+      -ms-transform: translateY(0.2rem);
+      -o-transform: translateY(0.2rem); }
 
 .play-grid {
   display: grid;
@@ -52,7 +79,7 @@ body {
   .play-grid-cell {
     width: 100%;
     padding-bottom: 100%;
-    box-shadow: 0.1rem 0.1rem 0.2rem 0.4rem rgba(15, 33, 41, 0.3);
+    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
     background-color: #1f3540;
     border-radius: 1.1rem;
     -webkit-border-radius: 1.1rem;
@@ -68,9 +95,9 @@ body {
   .play-stats-item {
     width: 100%;
     padding: 0.8rem;
-    border-radius: 1.1rem;
     text-transform: uppercase;
     font-weight: 500;
+    border-radius: 1.1rem;
     -webkit-border-radius: 1.1rem;
     -moz-border-radius: 1.1rem;
     -ms-border-radius: 1.1rem;
