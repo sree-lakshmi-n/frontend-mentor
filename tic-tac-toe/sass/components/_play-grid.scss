@@ -8,5 +8,19 @@
     background-color: $color-dark-desaturated-cyan;
     @include apply-border-radius-medium;
     @include apply-box-shadow-inset;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+  }
+
+  &-x {
+    .play-grid-cell:hover {
+      background-image: url("../../images/icon-x-outline.svg");
+    }
+  }
+  &-o {
+    .play-grid-cell:hover {
+      background-image: url("../../images/icon-o-outline.svg");
+    }
   }
 }
