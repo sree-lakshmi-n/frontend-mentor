@@ -28,6 +28,7 @@ addEventListener("DOMContentLoaded", () => {
 
 // Game Logic
 
+///////////////////////////////////////
 const gameSetup = () => {
   playerTurn.textContent = currentPlayer;
   gameMarkChoice();
