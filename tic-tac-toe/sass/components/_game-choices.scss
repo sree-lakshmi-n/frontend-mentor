@@ -2,6 +2,18 @@
   @include flex-center(column);
   @include apply-border-radius-medium;
   @include apply-box-shadow-inset;
+  gap: 0.8rem;
   background-color: $color-dark-desaturated-cyan;
   padding: 1.2rem;
+  text-transform: uppercase;
+
+  &-heading {
+    font-size: 1.2rem;
+    color: $color-echo-blue;
+    font-weight: 500;
+  }
+  &-reminder {
+    font-size: 0.8rem;
+    color: $color-dark-echo-blue;
+  }
 }
