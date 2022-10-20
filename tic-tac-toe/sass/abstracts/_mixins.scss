@@ -9,12 +9,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.6rem;
 }
-@mixin apply-border-radius-medium {
-  border-radius: $border-radius-medium;
-  -webkit-border-radius: $border-radius-medium;
-  -moz-border-radius: $border-radius-medium;
-  -ms-border-radius: $border-radius-medium;
-  -o-border-radius: $border-radius-medium;
+@mixin apply-border-radius-medium($border-radius: $border-radius-medium) {
+  border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -ms-border-radius: $border-radius;
+  -o-border-radius: $border-radius;
 }
 
 @mixin apply-box-shadow-inset($color: $color-very-dark-desaturated-cyan) {
