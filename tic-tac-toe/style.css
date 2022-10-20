@@ -26,19 +26,20 @@ body {
   margin-bottom: 1.6rem; }
   .top-nav .logo {
     width: 60%;
-    align-self: end; }
+    align-self: end;
+    margin: 0; }
   .top-nav .player-turn-container {
-    border-radius: 1.1rem;
-    -webkit-border-radius: 1.1rem;
-    -moz-border-radius: 1.1rem;
-    -ms-border-radius: 1.1rem;
-    -o-border-radius: 1.1rem;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
-    background-color: #030506;
+    background-color: #1f3540;
     color: #a9bfc9;
     text-transform: uppercase;
     font-weight: 500;
@@ -214,11 +215,11 @@ body {
     font-weight: 700; }
 
 .home-page {
-  width: 35%; }
-
-.game-page {
   width: 35%;
   display: none; }
+
+.game-page {
+  width: 35%; }
 
 .result-overlay {
   display: none; }
