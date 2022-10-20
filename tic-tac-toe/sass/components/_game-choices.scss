@@ -45,3 +45,44 @@
     color: $color-dark-echo-blue;
   }
 }
+
+.game-competitor-choices {
+  @include flex-center(column);
+  gap: 1.2rem;
+
+  * {
+    padding: 1.2rem;
+    border: none;
+    width: 100%;
+    @include apply-border-radius-medium(0.9rem);
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &:active {
+      box-shadow: none;
+      transform: translateY(0.2rem);
+      -webkit-transform: translateY(0.2rem);
+      -moz-transform: translateY(0.2rem);
+      -ms-transform: translateY(0.2rem);
+      -o-transform: translateY(0.2rem);
+    }
+  }
+
+  &-cpu {
+    background-color: $color-light-yellow;
+    @include apply-box-shadow-inset($color-dark-yellow);
+
+    &:hover {
+      background-color: $color-very-light-yellow;
+    }
+  }
+  &-player {
+    background-color: $color-dark-cyan;
+    @include apply-box-shadow-inset($color-very-dark-cyan);
+
+    &:hover {
+      background-color: $color-cyan;
+    }
+  }
+}
