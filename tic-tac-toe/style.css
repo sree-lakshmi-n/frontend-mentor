@@ -37,11 +37,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
-    background-color: #1f3540;
+    background-color: #030506;
     color: #a9bfc9;
     text-transform: uppercase;
     font-weight: 500;
-    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: inset 0 -0.4rem rgba(3, 5, 6, 0.5); }
   .top-nav .player-turn {
     font-size: 1.8rem;
     font-weight: 700; }
@@ -55,7 +55,7 @@ body {
     background-position: center;
     background-size: 50%;
     border: none;
-    box-shadow: 0 0.2rem 0 0.1rem rgba(135, 153, 161, 0.5);
+    box-shadow: inset 0 -0.4rem rgba(135, 153, 161, 0.5);
     border-radius: 0.7rem;
     -webkit-border-radius: 0.7rem;
     -moz-border-radius: 0.7rem;
@@ -81,7 +81,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-radius: 1.1rem;
+  -webkit-border-radius: 1.1rem;
+  -moz-border-radius: 1.1rem;
+  -ms-border-radius: 1.1rem;
+  -o-border-radius: 1.1rem;
+  box-shadow: inset 0 -0.4rem rgba(3, 5, 6, 0.5);
+  background-color: #1f3540; }
 
 .play-grid {
   display: grid;
@@ -91,13 +98,13 @@ body {
   .play-grid-cell {
     width: 100%;
     padding-bottom: 100%;
-    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
     background-color: #1f3540;
     border-radius: 1.1rem;
     -webkit-border-radius: 1.1rem;
     -moz-border-radius: 1.1rem;
     -ms-border-radius: 1.1rem;
-    -o-border-radius: 1.1rem; }
+    -o-border-radius: 1.1rem;
+    box-shadow: inset 0 -0.4rem rgba(3, 5, 6, 0.5); }
 
 .play-stats {
   display: grid;
