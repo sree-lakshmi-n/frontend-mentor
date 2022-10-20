@@ -15,7 +15,7 @@
     color: $color-echo-blue;
     text-transform: uppercase;
     font-weight: 500;
-    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba($color-black, 0.2);
+    @include apply-box-shadow-inset;
   }
 
   .player-turn {
@@ -33,7 +33,7 @@
     background-position: center;
     background-size: 50%;
     border: none;
-    box-shadow: 0 0.2rem 0 0.1rem rgba($color-dark-echo-blue, 0.5);
+    @include apply-box-shadow-inset($color-dark-echo-blue);
     border-radius: $border-radius-small;
     -webkit-border-radius: $border-radius-small;
     -moz-border-radius: $border-radius-small;
