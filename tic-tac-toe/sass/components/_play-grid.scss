@@ -5,8 +5,8 @@
   &-cell {
     width: 100%;
     padding-bottom: 100%;
-    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba($color-black, 0.2);
-    background-color: $color-very-dark-desaturated-cyan;
+    background-color: $color-dark-desaturated-cyan;
     @include apply-border-radius-medium;
+    @include apply-box-shadow-inset;
   }
 }
