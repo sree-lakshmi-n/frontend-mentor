@@ -5,13 +5,14 @@
   .logo {
     width: 60%;
     align-self: end;
+    margin: 0;
   }
 
   .player-turn-container {
-    @include apply-border-radius-medium;
+    @include apply-border-radius-medium(0.7rem);
     @include flex-center();
     gap: 0.8rem;
-    background-color: $color-very-dark-desaturated-cyan;
+    background-color: $color-dark-desaturated-cyan;
     color: $color-echo-blue;
     text-transform: uppercase;
     font-weight: 500;
