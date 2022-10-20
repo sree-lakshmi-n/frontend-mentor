@@ -1,3 +1,6 @@
 .game-choices {
   @include flex-center(column);
+  @include apply-border-radius-medium;
+  @include apply-box-shadow-inset;
+  background-color: $color-dark-desaturated-cyan;
 }
