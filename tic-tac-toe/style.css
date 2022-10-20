@@ -110,7 +110,8 @@ body {
     -moz-border-radius: 0.7rem;
     -ms-border-radius: 0.7rem;
     -o-border-radius: 0.7rem;
-    padding: 0.6rem; }
+    padding: 0.6rem;
+    gap: 0.6rem; }
     .game-choices-marks * {
       width: 100%;
       border-radius: 0.7rem;
@@ -123,6 +124,8 @@ body {
       font-weight: 800;
       color: #a9bfc9;
       text-align: center; }
+    .game-choices-marks :hover {
+      background-color: #0f2129; }
     .game-choices-marks .selected {
       background-color: #a9bfc9;
       color: #192a33; }
