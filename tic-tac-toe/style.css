@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -89,14 +89,43 @@ body {
   -ms-border-radius: 1.1rem;
   -o-border-radius: 1.1rem;
   box-shadow: inset 0 -0.4rem rgba(3, 5, 6, 0.5);
-  gap: 0.8rem;
+  gap: 1.2rem;
   background-color: #1f3540;
-  padding: 1.2rem;
-  text-transform: uppercase; }
+  padding: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem; }
   .game-choices-heading {
     font-size: 1.2rem;
     color: #a9bfc9;
-    font-weight: 500; }
+    font-weight: 700; }
+  .game-choices-marks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #192a33;
+    width: 100%;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+    padding: 0.6rem; }
+    .game-choices-marks * {
+      width: 100%;
+      border-radius: 0.7rem;
+      -webkit-border-radius: 0.7rem;
+      -moz-border-radius: 0.7rem;
+      -ms-border-radius: 0.7rem;
+      -o-border-radius: 0.7rem;
+      padding: 0.6rem;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #a9bfc9;
+      text-align: center; }
+    .game-choices-marks .selected {
+      background-color: #a9bfc9;
+      color: #192a33; }
   .game-choices-reminder {
     font-size: 0.8rem;
     color: #8799a1; }
@@ -146,10 +175,10 @@ body {
     font-weight: 700; }
 
 .home-page {
-  width: 30%; }
+  width: 35%; }
 
 .game-page {
-  width: 30%;
+  width: 35%;
   display: none; }
 
 .result-overlay {
