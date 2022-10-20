@@ -9,7 +9,7 @@
 
   .player-turn-container {
     @include apply-border-radius-medium;
-    @include flex-center;
+    @include flex-center(row);
     gap: 0.8rem;
     background-color: $color-very-dark-desaturated-cyan;
     color: $color-echo-blue;
