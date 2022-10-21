@@ -3,7 +3,7 @@ const _ = (className) => {
 };
 
 const noOfGridCells = 9;
-let currentPlayer = "X";
+let currentPlayer = "x";
 let players = [];
 
 const playerTurn = _("player-turn")[0];
@@ -27,16 +27,23 @@ addEventListener("DOMContentLoaded", () => {
 });
 
 // Game Logic
+const addActive = (cell) => {
+  console.log(cell.target);
+  cell.target.classList.add(`active-${currentPlayer}`);
+};
 
-///////////////////////////////////////
 const gameSetup = () => {
   playerTurn.textContent = currentPlayer;
-  gameMarkChoice();
+  playGrid.classList.add(`play-grid-${currentPlayer}`);
+  Array.from(playGrid.children).forEach((cell) => {
+    cell.addEventListener("click", addActive, cell);
+  });
 };
+///////////////////////////////////////
 
 const markSelected = (mark) => {
   mark.classList.add("selected");
-  player1 = mark.textContent;
+  //   player1 = mark.textContent;
 };
 
 const removeSelected = () => {
