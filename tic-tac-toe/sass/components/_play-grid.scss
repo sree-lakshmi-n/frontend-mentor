@@ -31,4 +31,12 @@
     background-image: url(../../images/icon-o.svg);
     pointer-events: none;
   }
+  &-cell.win-x[data-cell-num] {
+    background-color: $color-dark-cyan;
+    background-image: url(../../images/icon-x-win.svg);
+  }
+  &-cell.win-o[data-cell-num] {
+    background-color: $color-light-yellow;
+    background-image: url(../../images/icon-o-win.svg);
+  }
 }
