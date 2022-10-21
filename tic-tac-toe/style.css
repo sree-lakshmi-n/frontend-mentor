@@ -189,14 +189,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%; }
-    .play-grid-cell.active-x {
-      background-image: url(../../images/icon-x.svg); }
-    .play-grid-cell.active-o {
-      background-image: url(../../images/icon-o.svg); }
   .play-grid-x .play-grid-cell:hover {
     background-image: url("../../images/icon-x-outline.svg"); }
   .play-grid-o .play-grid-cell:hover {
     background-image: url("../../images/icon-o-outline.svg"); }
+  .play-grid-cell.active-x[data-cell-num] {
+    background-image: url(../../images/icon-x.svg);
+    pointer-events: none; }
+  .play-grid-cell.active-o[data-cell-num] {
+    background-image: url(../../images/icon-o.svg);
+    pointer-events: none; }
 
 .play-stats {
   display: grid;

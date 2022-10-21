@@ -23,4 +23,12 @@
       background-image: url("../../images/icon-o-outline.svg");
     }
   }
+  &-cell.active-x[data-cell-num] {
+    background-image: url(../../images/icon-x.svg);
+    pointer-events: none;
+  }
+  &-cell.active-o[data-cell-num] {
+    background-image: url(../../images/icon-o.svg);
+    pointer-events: none;
+  }
 }
