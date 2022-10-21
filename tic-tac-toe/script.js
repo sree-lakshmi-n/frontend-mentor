@@ -10,6 +10,7 @@ const playerTurn = _("player-turn")[0];
 const gameChoices = _("game-choices-marks")[0];
 const gameCompetitorChoices = _("game-competitor-choices")[0];
 const playGrid = _("play-grid")[0];
+let gridCell = { x: [], o: [] };
 
 // Making of grid cells
 const makeGridCells = () => {
@@ -27,14 +28,24 @@ addEventListener("DOMContentLoaded", () => {
 });
 
 // Game Logic
+const updatePlayerTurnContent = () => {
+  playGrid.className = `play-grid-${currentPlayer} play-grid`;
+  playerTurn.textContent = currentPlayer;
+};
+
+const toggleCurrentPlayer = () => {
+  currentPlayer = currentPlayer === "x" ? "o" : "x";
+  updatePlayerTurnContent();
+};
+
 const addActive = (cell) => {
-  console.log(cell.target);
   cell.target.classList.add(`active-${currentPlayer}`);
+  gridCell[currentPlayer].push(cell.target.getAttribute("data-cell-num"));
+  toggleCurrentPlayer();
 };
 
 const gameSetup = () => {
-  playerTurn.textContent = currentPlayer;
-  playGrid.classList.add(`play-grid-${currentPlayer}`);
+  updatePlayerTurnContent();
   Array.from(playGrid.children).forEach((cell) => {
     cell.addEventListener("click", addActive, cell);
   });
