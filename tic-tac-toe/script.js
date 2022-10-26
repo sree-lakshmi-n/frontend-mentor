@@ -4,7 +4,7 @@ const _ = (className) => {
 
 const noOfGridCells = 9;
 let currentPlayer = "x";
-let players = { pl1: "", pl2: "" };
+let players = { pl1: ["", ""], pl2: ["", ""] };
 let winner = "";
 
 const playerTurn = _("player-turn")[0];
@@ -37,12 +37,12 @@ const handleMarkChoice = (mark) => {
   });
   if (mark.target.className.endsWith("o")) {
     gameChoicesMarkO.classList.add("selected");
-    players.pl1 = "o";
-    players.pl2 = "x";
+    players.pl1[0] = "o";
+    players.pl2[0] = "x";
   } else {
     gameChoicesMarkX.classList.add("selected");
-    players.pl1 = "x";
-    players.pl2 = "o";
+    players.pl1[0] = "x";
+    players.pl2[0] = "o";
   }
 };
 
