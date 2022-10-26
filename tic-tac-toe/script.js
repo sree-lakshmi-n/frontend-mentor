@@ -12,6 +12,8 @@ const gameChoices = _("game-choices-marks")[0];
 const gameChoicesMarkX = _("game-choices-marks-x")[0];
 const gameChoicesMarkO = _("game-choices-marks-o")[0];
 const gameCompetitorChoices = _("game-competitor-choices")[0];
+const playerX = _("player-x")[0];
+const playerO = _("player-o")[0];
 const playGrid = _("play-grid")[0];
 let gridCell = { x: [], o: [] };
 const winningCombinations = [
@@ -56,7 +58,7 @@ const handleCompetitorChoice = (competitor) => {
     players.pl1[1] = "p1";
     players.pl2[1] = "p2";
   }
-  console.log(players);
+  startGame();
 };
 
 gameCompetitorChoices.addEventListener("click", handleCompetitorChoice, this);
@@ -64,6 +66,16 @@ gameCompetitorChoices.addEventListener("click", handleCompetitorChoice, this);
 /******************************/
 /* GAME PAGE */
 /******************************/
+// Starting game
+const startGame = () => {
+  if (players.pl1[0] === "x") {
+    playerX.textContent = players.pl1[1];
+    playerO.textContent = players.pl2[1];
+  } else {
+    playerX.textContent = players.pl2[1];
+    playerO.textContent = players.pl1[1];
+  }
+};
 
 // Making of grid cells
 const makeGridCells = () => {
