@@ -48,6 +48,19 @@ const handleMarkChoice = (mark) => {
 
 gameChoices.addEventListener("click", handleMarkChoice, this);
 
+const handleCompetitorChoice = (competitor) => {
+  if (competitor.target.classList.contains("game-competitor-choices-cpu")) {
+    players.pl1[1] = "you";
+    players.pl2[1] = "cpu";
+  } else {
+    players.pl1[1] = "p1";
+    players.pl2[1] = "p2";
+  }
+  console.log(players);
+};
+
+gameCompetitorChoices.addEventListener("click", handleCompetitorChoice, this);
+
 /******************************/
 /* GAME PAGE */
 /******************************/
