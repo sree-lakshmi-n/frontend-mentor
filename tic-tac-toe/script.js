@@ -4,11 +4,13 @@ const _ = (className) => {
 
 const noOfGridCells = 9;
 let currentPlayer = "x";
-let players = [];
+let players = { pl1: "", pl2: "" };
 let winner = "";
 
 const playerTurn = _("player-turn")[0];
 const gameChoices = _("game-choices-marks")[0];
+const gameChoicesMarkX = _("game-choices-marks-x")[0];
+const gameChoicesMarkO = _("game-choices-marks-o")[0];
 const gameCompetitorChoices = _("game-competitor-choices")[0];
 const playGrid = _("play-grid")[0];
 let gridCell = { x: [], o: [] };
@@ -29,6 +31,23 @@ let winCountTies = 0;
 /******************************/
 /* HOME PAGE */
 /******************************/
+const handleMarkChoice = (mark) => {
+  Array.from(gameChoices.children).forEach((child) => {
+    child.classList.remove("selected");
+  });
+  if (mark.target.className.endsWith("o")) {
+    gameChoicesMarkO.classList.add("selected");
+    players.pl1 = "o";
+    players.pl2 = "x";
+  } else {
+    gameChoicesMarkX.classList.add("selected");
+    players.pl1 = "x";
+    players.pl2 = "o";
+  }
+};
+
+gameChoices.addEventListener("click", handleMarkChoice, this);
+
 /******************************/
 /* GAME PAGE */
 /******************************/
