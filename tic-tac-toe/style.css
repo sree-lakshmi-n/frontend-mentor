@@ -12,6 +12,9 @@ body {
   justify-content: center;
   align-items: center; }
 
+.hide {
+  display: none; }
+
 html {
   font-size: 62.5%; }
 

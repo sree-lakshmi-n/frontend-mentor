@@ -8,3 +8,6 @@ body {
   height: 100vh;
   @include flex-center();
 }
+.hide {
+  display: none;
+}
