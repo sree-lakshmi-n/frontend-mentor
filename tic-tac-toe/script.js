@@ -2,6 +2,9 @@ const _ = (className) => {
   return document.getElementsByClassName(className);
 };
 
+const homePage = _("home-page")[0];
+const gamePage = _("game-page")[0];
+
 const noOfGridCells = 9;
 let currentPlayer = "x";
 let players = { pl1: ["", ""], pl2: ["", ""] };
@@ -59,6 +62,7 @@ const handleCompetitorChoice = (competitor) => {
     players.pl2[1] = "p2";
   }
   startGame();
+  showGamePage();
 };
 
 gameCompetitorChoices.addEventListener("click", handleCompetitorChoice, this);
@@ -75,6 +79,12 @@ const startGame = () => {
     playerX.textContent = players.pl2[1];
     playerO.textContent = players.pl1[1];
   }
+};
+
+const showGamePage = () => {
+  console.log(homePage);
+  homePage.classList.add("hide");
+  gamePage.classList.remove("hide");
 };
 
 // Making of grid cells
@@ -161,40 +171,4 @@ const checkForWinner = () => {
     _("score-ties")[0].textContent = winCountTies;
     res = "draw";
   }
-};
-
-///////////////////////////////////////
-
-const markSelected = (mark) => {
-  mark.classList.add("selected");
-  //   player1 = mark.textContent;
-};
-
-const removeSelected = () => {
-  Array.from(gameChoices.children).forEach((mark) => {
-    mark.classList.remove("selected");
-  });
-};
-
-const gameMarkChoice = () => {
-  Array.from(gameChoices.children).forEach((mark) => {
-    mark.addEventListener("click", () => {
-      removeSelected(gameChoices);
-      markSelected(mark);
-    });
-  });
-};
-
-// Game Competitor Choice
-
-const playVsCPU = () => {
-  gameType = "CPU";
-};
-
-const gameCompetitorChoice = () => {
-  _("game-competitor-choices-cpu")[0].addEventListener("click", playVsCPU);
-  _("game-competitor-choices-player")[0].addEventListener(
-    "click",
-    playVsPlayer
-  );
 };
