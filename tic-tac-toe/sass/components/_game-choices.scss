@@ -51,22 +51,11 @@
   gap: 1.2rem;
 
   * {
-    padding: 1.2rem;
-    border: none;
+    @include btn-styling;
     width: 100%;
-    @include apply-border-radius-medium(0.9rem);
-    font-family: inherit;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: $color-black-pearl;
 
     &:active {
-      box-shadow: none;
-      transform: translateY(0.2rem);
-      -webkit-transform: translateY(0.2rem);
-      -moz-transform: translateY(0.2rem);
-      -ms-transform: translateY(0.2rem);
-      -o-transform: translateY(0.2rem);
+      @include active-btn-styling;
     }
   }
 
