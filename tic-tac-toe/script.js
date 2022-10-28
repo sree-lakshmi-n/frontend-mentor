@@ -4,6 +4,7 @@ const _ = (className) => {
 
 const homePage = _("home-page")[0];
 const gamePage = _("game-page")[0];
+const resultOverlay = _("result-overlay")[0];
 
 const noOfGridCells = 9;
 let currentPlayer = "x";
@@ -82,9 +83,12 @@ const startGame = () => {
 };
 
 const showGamePage = () => {
-  console.log(homePage);
   homePage.classList.add("hide");
   gamePage.classList.remove("hide");
+};
+
+const showResultOverlay = () => {
+  resultOverlay.classList.remove("hide");
 };
 
 // Making of grid cells
@@ -152,6 +156,7 @@ const checkForWinner = () => {
           cell.classList.add(`win-${currentPlayer}`);
         });
       });
+      showResultOverlay();
     }
     return isWon;
   });
