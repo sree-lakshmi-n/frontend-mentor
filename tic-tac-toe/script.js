@@ -23,6 +23,7 @@ const playGridCells = _("play-grid-cell");
 const winnerInfo = _("winner-info")[0];
 const resultInfo = _("result-info")[0];
 const replayBtn = _("btn-replay")[0];
+const quitBtn = _("btn-quit")[0];
 const continueBtn = _("btn-continue")[0];
 let gridCell = { x: [], o: [] };
 const winningCombinations = [
@@ -90,6 +91,10 @@ const startGame = () => {
 const showGamePage = () => {
   homePage.classList.add("hide");
   gamePage.classList.remove("hide");
+};
+const showHomePage = () => {
+  homePage.classList.remove("hide");
+  gamePage.classList.add("hide");
 };
 
 const showResultOverlay = () => {
@@ -226,3 +231,30 @@ const nextRound = () => {
 
 replayBtn.addEventListener("click", nextRound);
 continueBtn.addEventListener("click", nextRound);
+
+// Quit functionality
+const handleQuit = () => {
+  resetPlayers();
+  resetScores();
+  nextRound();
+  showHomePage();
+};
+
+quitBtn.addEventListener("click", handleQuit);
+
+// Reset players
+const resetPlayers = () => {
+  players = { pl1: ["x", ""], pl2: ["o", ""] };
+  playerX.textContent = "";
+  playerO.textContent = "";
+};
+
+// Reset Scores
+const resetScores = () => {
+  winCountX = 0;
+  winCountO = 0;
+  winCountTies = 0;
+  _("score-x")[0].textContent = winCountX;
+  _("score-ties")[0].textContent = winCountTies;
+  _("score-o")[0].textContent = winCountO;
+};
