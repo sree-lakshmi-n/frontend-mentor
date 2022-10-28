@@ -8,7 +8,7 @@ const resultOverlay = _("result-overlay")[0];
 
 const noOfGridCells = 9;
 let currentPlayer = "x";
-let players = { pl1: ["", ""], pl2: ["", ""] };
+let players = { pl1: ["x", ""], pl2: ["o", ""] };
 let winner = "";
 
 const playerTurn = _("player-turn")[0];
@@ -19,6 +19,8 @@ const gameCompetitorChoices = _("game-competitor-choices")[0];
 const playerX = _("player-x")[0];
 const playerO = _("player-o")[0];
 const playGrid = _("play-grid")[0];
+const winnerInfo = _("winner-info")[0];
+const resultInfo = _("result-info")[0];
 let gridCell = { x: [], o: [] };
 const winningCombinations = [
   ["0", "1", "2"],
@@ -156,24 +158,47 @@ const checkForWinner = () => {
           cell.classList.add(`win-${currentPlayer}`);
         });
       });
-      showResultOverlay();
     }
     return isWon;
   });
 
-  if (res) {
-    if (currentPlayer === "x") {
-      winCountX++;
-      _(`score-x`)[0].textContent = winCountX;
-    } else {
-      winCountO++;
-      _(`score-o`)[0].textContent = winCountO;
-    }
-  }
   if (gridCell.x.length >= 5 && gridCell.o.length >= 4 && res === false) {
     winner = "";
     winCountTies++;
     _("score-ties")[0].textContent = winCountTies;
+    winner = "draw";
     res = "draw";
+    fillResultContent();
+  }
+
+  if (res) {
+    if (res !== "draw") {
+      if (currentPlayer === "x") {
+        winCountX++;
+        _(`score-x`)[0].textContent = winCountX;
+      } else {
+        winCountO++;
+        _(`score-o`)[0].textContent = winCountO;
+      }
+    }
+
+    fillResultContent();
+    showResultOverlay();
+  }
+};
+
+// Result Overlay text content
+
+const fillResultContent = () => {
+  if (winner === "draw") {
+    winnerInfo.textContent = "";
+    resultInfo.textContent = `Round tied`;
+  } else {
+    resultInfo.textContent = `${winner} takes the round`;
+    if (players.pl1[0] === winner) {
+      winnerInfo.textContent = `${players.pl1[1]} won!`;
+    } else {
+      winnerInfo.textContent = `${players.pl2[1]} won!`;
+    }
   }
 };
