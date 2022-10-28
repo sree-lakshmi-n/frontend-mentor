@@ -19,8 +19,11 @@ const gameCompetitorChoices = _("game-competitor-choices")[0];
 const playerX = _("player-x")[0];
 const playerO = _("player-o")[0];
 const playGrid = _("play-grid")[0];
+const playGridCells = _("play-grid-cell");
 const winnerInfo = _("winner-info")[0];
 const resultInfo = _("result-info")[0];
+const replayBtn = _("btn-replay")[0];
+const continueBtn = _("btn-continue")[0];
 let gridCell = { x: [], o: [] };
 const winningCombinations = [
   ["0", "1", "2"],
@@ -92,6 +95,9 @@ const showGamePage = () => {
 const showResultOverlay = () => {
   resultOverlay.classList.remove("hide");
 };
+const hideResultOverlay = () => {
+  resultOverlay.classList.add("hide");
+};
 
 // Making of grid cells
 const makeGridCells = () => {
@@ -124,6 +130,11 @@ const addActive = (cell) => {
   gridCell[currentPlayer].push(cell.target.getAttribute("data-cell-num"));
   checkForWinner();
   toggleCurrentPlayer();
+};
+const removeActive = () => {
+  Array.from(playGridCells).forEach((cell) => {
+    cell.className = "play-grid-cell";
+  });
 };
 
 const gameSetup = () => {
@@ -202,3 +213,16 @@ const fillResultContent = () => {
     }
   }
 };
+
+// Next round functionality
+const nextRound = () => {
+  currentPlayer = "x";
+  winner = "";
+  gridCell = { x: [], o: [] };
+  updatePlayerTurnContent();
+  removeActive();
+  hideResultOverlay();
+};
+
+replayBtn.addEventListener("click", nextRound);
+continueBtn.addEventListener("click", nextRound);
