@@ -10,6 +10,7 @@ const noOfGridCells = 9;
 let currentPlayer = "x";
 let players = { pl1: ["x", ""], pl2: ["o", ""] };
 let winner = "";
+let isWin = false;
 
 const playerTurn = _("player-turn")[0];
 const gameChoices = _("game-choices-marks")[0];
@@ -25,7 +26,6 @@ const resultInfo = _("result-info")[0];
 const replayBtn = _("btn-replay")[0];
 const quitBtn = _("btn-quit")[0];
 const continueBtn = _("btn-continue")[0];
-let gridCell = { x: [], o: [] };
 const winningCombinations = [
   ["0", "1", "2"],
   ["3", "4", "5"],
@@ -36,6 +36,9 @@ const winningCombinations = [
   ["0", "4", "8"],
   ["2", "4", "6"],
 ];
+let gridCell = { x: [], o: [] };
+let gameState = new Array(9).fill("");
+const emptyIndices = [];
 let winCountX = 0;
 let winCountO = 0;
 let winCountTies = 0;
@@ -64,6 +67,7 @@ const handleCompetitorChoice = (competitor) => {
   if (competitor.target.classList.contains("game-competitor-choices-cpu")) {
     players.pl1[1] = "you";
     players.pl2[1] = "cpu";
+    handleCPUPlay();
   } else {
     players.pl1[1] = "p1";
     players.pl2[1] = "p2";
@@ -128,12 +132,15 @@ const updatePlayerTurnContent = () => {
 const toggleCurrentPlayer = () => {
   currentPlayer = currentPlayer === "x" ? "o" : "x";
   updatePlayerTurnContent();
+  if (players.pl2[1] === "cpu") handleCPUPlay();
 };
 
 const addActive = (cell) => {
-  cell.target.classList.add(`active-${currentPlayer}`);
-  gridCell[currentPlayer].push(cell.target.getAttribute("data-cell-num"));
-  checkForWinner();
+  cell = cell.target === undefined || cell.target === null ? cell : cell.target;
+  cell.classList.add(`active-${currentPlayer}`);
+  gridCell[currentPlayer].push(cell.getAttribute("data-cell-num"));
+  gameState[+cell.getAttribute("data-cell-num")] = currentPlayer;
+  isWin = checkForWinner();
   toggleCurrentPlayer();
 };
 const removeActive = () => {
@@ -171,7 +178,7 @@ const checkForWinner = () => {
           `.play-grid-cell[data-cell-num='${el}']`
         );
         Array.from(winCells).forEach((cell) => {
-          cell.classList.add(`win-${currentPlayer}`);
+          cell.classList.add(`win-${winner}`);
         });
       });
     }
@@ -184,15 +191,19 @@ const checkForWinner = () => {
     _("score-ties")[0].textContent = winCountTies;
     winner = "draw";
     res = "draw";
+    console.log("draw");
+
     fillResultContent();
   }
 
   if (res) {
     if (res !== "draw") {
-      if (currentPlayer === "x") {
+      if (winner === "x") {
+        console.log("x");
         winCountX++;
         _(`score-x`)[0].textContent = winCountX;
       } else {
+        console.log("o");
         winCountO++;
         _(`score-o`)[0].textContent = winCountO;
       }
@@ -201,6 +212,7 @@ const checkForWinner = () => {
     fillResultContent();
     showResultOverlay();
   }
+  return res ? true : false;
 };
 
 // Result Overlay text content
@@ -224,6 +236,7 @@ const nextRound = () => {
   currentPlayer = "x";
   winner = "";
   gridCell = { x: [], o: [] };
+  gameState = new Array(9).fill("");
   updatePlayerTurnContent();
   removeActive();
   hideResultOverlay();
@@ -257,4 +270,16 @@ const resetScores = () => {
   _("score-x")[0].textContent = winCountX;
   _("score-ties")[0].textContent = winCountTies;
   _("score-o")[0].textContent = winCountO;
+};
+
+const handleCPUPlay = () => {
+  emptyIndices.length = 0; // resetting emptyIndices array
+  gameState.forEach((e, index) => {
+    if (e === "") emptyIndices.push(index);
+  });
+  const itemNum = emptyIndices[Math.floor(Math.random() * emptyIndices.length)];
+  const item = document.querySelector(`[data-cell-num = "${itemNum}"]`);
+  if (currentPlayer === players.pl2[0] && item && !isWin) {
+    addActive(item);
+  }
 };
