@@ -1,0 +1,37 @@
+.nav-items-wrapper {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+.nav-items {
+  cursor: pointer;
+}
+.nav-items:hover,
+.nav-items:active {
+  color: var(--soft-red);
+}
+
+@media screen and (max-width: 700px) {
+  .nav-items-wrapper::after {
+    content: url(../../images/icon-menu-close.svg);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  .nav-items-wrapper {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    background-color: var(--off-white);
+    padding: 0 2.4rem;
+    width: 70%;
+    color: var(--very-dark-blue);
+    gap: 3.2rem;
+    z-index: 10;
+  }
+}

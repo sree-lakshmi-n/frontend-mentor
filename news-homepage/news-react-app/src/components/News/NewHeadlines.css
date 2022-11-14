@@ -1,0 +1,17 @@
+.new-headlines {
+  background-color: var(--very-dark-blue);
+  padding: 2.4rem;
+  color: var(--grayish-blue);
+  font-size: 1.4rem;
+  align-self: flex-start;
+}
+.new-headlines__title {
+  color: var(--soft-orange);
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+.new-headlines__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
