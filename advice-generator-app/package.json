@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "sass": "^1.56.1"
+  },
+  "name": "advice-generator-app",
+  "description": "![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
