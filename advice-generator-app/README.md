@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/sree-lakshmi-n/frontend-mentor/tree/main/advice-generator-app)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://advice-generator-app.sree112.repl.co)
 
 ## My process
 
