@@ -1,4 +1,4 @@
-# Frontend Mentor - Advice generator app solution
+# Advice generator app
 
 This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db).
 
@@ -69,6 +69,13 @@ let {
 } = data;
 ```
 
+Adding event listener on a CSS pseudo element
+
+```js
+  element { pointer-events: none; }
+  element::after { pointer-events: all; }
+```
+
 ### Continued development
 
 - Develop the same with ReactJS
@@ -78,6 +85,7 @@ let {
 - [All possible ways of making an API call in JavaScript](https://levelup.gitconnected.com/all-possible-ways-of-making-an-api-call-in-plain-javascript-c0dee3c11b8b)
 - [Third-party APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Third_party_APIs) - MDN documentation on Third-party APIs
 - [Advice Slip JSON API](https://api.adviceslip.com/)
+- [Adding event listener on a CSS pseudo element](https://stackoverflow.com/questions/9395858/event-listener-on-a-css-pseudo-element-such-as-after-and-before)
 
 ## Author
 
