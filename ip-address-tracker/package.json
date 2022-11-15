@@ -1,0 +1,33 @@
+{
+  "devDependencies": {
+    "sass": "^1.56.1"
+  },
+  "name": "ip-address-tracker",
+  "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "script.js",
+  "dependencies": {
+    "anymatch": "^3.1.2",
+    "braces": "^3.0.2",
+    "binary-extensions": "^2.2.0",
+    "fill-range": "^7.0.1",
+    "chokidar": "^3.5.3",
+    "fsevents": "^2.3.2",
+    "glob-parent": "^5.1.2",
+    "immutable": "^4.1.0",
+    "is-binary-path": "^2.1.0",
+    "is-glob": "^4.0.3",
+    "is-extglob": "^2.1.1",
+    "is-number": "^7.0.0",
+    "picomatch": "^2.3.1",
+    "normalize-path": "^3.0.0",
+    "readdirp": "^3.6.0",
+    "source-map-js": "^1.0.2",
+    "to-regex-range": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
