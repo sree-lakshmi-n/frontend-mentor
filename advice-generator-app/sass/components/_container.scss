@@ -4,5 +4,22 @@
   border-radius: 1.1rem;
   @include flex(column);
   @include flex-center;
-  gap: 2.4rem;
+  position: relative;
+}
+.container::after {
+  content: url("../../images/icon-dice.svg");
+  padding: 1.2rem;
+  background-color: $neon-green;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
 }
