@@ -31,4 +31,11 @@ body {
     color: #3e52a3; }
 
 .container {
-  background-color: #4e5d73; }
+  background-color: #323a49;
+  padding: 3.2rem;
+  border-radius: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem; }
