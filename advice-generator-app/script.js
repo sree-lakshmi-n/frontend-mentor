@@ -15,5 +15,5 @@ getQuote().then((data) => {
     slip: { id, advice },
   } = data;
   adviceId.textContent = id;
-  adviceText.textContent = advice;
+  adviceText.textContent = `"${advice}"`;
 });
