@@ -6,6 +6,7 @@
   @include flex-center;
   gap: 1.8rem;
   position: relative;
+  width: 50%;
 }
 .container::before {
   content: url("../../images/icon-dice.svg");
@@ -26,4 +27,27 @@
 }
 .container::after {
   content: url("../../images/pattern-divider-desktop.svg");
+}
+.advice-id-container {
+  text-transform: uppercase;
+  color: $neon-green;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.advice-text {
+  text-align: center;
+  line-height: 1.4;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+  .container::after {
+    content: url("../../images/pattern-divider-mobile.svg");
+  }
 }

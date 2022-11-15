@@ -3,7 +3,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 800;
   line-height: 1; }
 
@@ -39,7 +39,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1.8rem;
-  position: relative; }
+  position: relative;
+  width: 50%; }
 
 .container::before {
   content: url("../../images/icon-dice.svg");
@@ -60,3 +61,23 @@ body {
 
 .container::after {
   content: url("../../images/pattern-divider-desktop.svg"); }
+
+.advice-id-container {
+  text-transform: uppercase;
+  color: #52ffa8;
+  font-size: 1.2rem;
+  letter-spacing: 2px; }
+
+.advice-text {
+  text-align: center;
+  line-height: 1.4; }
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 70%; } }
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%; }
+  .container::after {
+    content: url("../../images/pattern-divider-mobile.svg"); } }
