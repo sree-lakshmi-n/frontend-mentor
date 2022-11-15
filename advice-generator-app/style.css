@@ -16,10 +16,17 @@ body {
   background-color: #1f2632;
   color: #cee3e9;
   font-family: "Manrope", sans-serif;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 .attribution {
   font-size: 11px;
   text-align: center; }
   .attribution a {
     color: #3e52a3; }
+
+.container {
+  background-color: #4e5d73; }

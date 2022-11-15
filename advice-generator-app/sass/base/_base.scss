@@ -8,4 +8,6 @@ body {
   color: $light-cyan;
   font-family: "Manrope", sans-serif;
   height: 100vh;
+  @include flex;
+  @include flex-center;
 }
