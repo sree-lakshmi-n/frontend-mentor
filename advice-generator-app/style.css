@@ -32,15 +32,16 @@ body {
 
 .container {
   background-color: #323a49;
-  padding: 3.2rem;
+  padding: 3.2rem 3.2rem 4.8rem;
   border-radius: 1.1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.8rem;
   position: relative; }
 
-.container::after {
+.container::before {
   content: url("../../images/icon-dice.svg");
   padding: 1.2rem;
   background-color: #52ffa8;
@@ -56,3 +57,6 @@ body {
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
   -o-transform: translateY(50%); }
+
+.container::after {
+  content: url("../../images/pattern-divider-desktop.svg"); }
