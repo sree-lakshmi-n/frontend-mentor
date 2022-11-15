@@ -27,6 +27,12 @@
   -ms-transform: translateY(50%);
   -o-transform: translateY(50%);
   pointer-events: all;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  cursor: pointer;
 }
 .container::after {
   content: url("../../images/pattern-divider-desktop.svg");
