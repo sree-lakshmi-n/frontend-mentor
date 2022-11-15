@@ -1,0 +1,8 @@
+@mixin flex($dirn: row) {
+  display: flex;
+  flex-direction: $dirn;
+}
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
