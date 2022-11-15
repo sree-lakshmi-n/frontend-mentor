@@ -14,7 +14,8 @@ body {
 
 body {
   background-color: #1f2632;
-  color: #cee3e9; }
+  color: #cee3e9;
+  font-family: "Manrope", sans-serif; }
 
 .attribution {
   font-size: 11px;
