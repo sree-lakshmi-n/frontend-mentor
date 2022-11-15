@@ -7,7 +7,9 @@
   gap: 1.8rem;
   position: relative;
   width: 50%;
+  pointer-events: none;
 }
+
 .container::before {
   content: url("../../images/icon-dice.svg");
   padding: 1.2rem;
@@ -24,6 +26,7 @@
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
   -o-transform: translateY(50%);
+  pointer-events: all;
 }
 .container::after {
   content: url("../../images/pattern-divider-desktop.svg");
