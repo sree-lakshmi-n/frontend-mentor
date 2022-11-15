@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img src="./screenshot.png" alt="webpage screenshot" />
 
 ### Links
 
