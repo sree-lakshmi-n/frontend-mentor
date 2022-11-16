@@ -13,4 +13,16 @@ body {
   color: $dark-gray;
   font-family: "Rubik", sans-serif;
   font-weight: $font-wt-regular;
+  min-height: 100vh;
+}
+.section-header {
+  background-image: url(../../images/pattern-bg.png);
+  padding: 3.2rem 0 5.4rem;
+  @include flex-center(column);
+  gap: 2.4rem;
+}
+.title {
+  color: $white;
+  font-size: 2.4rem;
+  font-weight: $font-wt-medium;
 }
