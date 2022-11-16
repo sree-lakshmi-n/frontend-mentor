@@ -3,6 +3,7 @@
   background-color: $white;
   padding: 1.8rem;
   @include flex-center;
+  align-items: stretch;
   border-radius: 1.3rem;
   -webkit-border-radius: 1.3rem;
   -moz-border-radius: 1.3rem;
@@ -19,12 +20,22 @@
   box-shadow: 1px 1px 4px rgba($very-dark-gray, 0.2);
 
   .ip-details {
+    border-right: 1px solid $dark-gray;
+    padding: 0 2.4rem;
+    &:last-child {
+      border: none;
+    }
     &-heading {
       text-transform: uppercase;
       color: $dark-gray;
       font-size: 1rem;
       font-weight: $font-wt-medium;
       letter-spacing: 0.8px;
+      margin-bottom: 1.2rem;
+    }
+    &-content {
+      color: $very-dark-gray;
+      font-weight: $font-wt-medium;
     }
   }
 }
