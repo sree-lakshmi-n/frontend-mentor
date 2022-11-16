@@ -20,6 +20,7 @@ body {
   padding: 3.2rem 0 5.4rem;
   @include flex-center(column);
   gap: 2.4rem;
+  position: relative;
 }
 .title {
   color: $white;
