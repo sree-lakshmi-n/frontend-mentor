@@ -71,7 +71,7 @@ let {
 
 Adding event listener on a CSS pseudo element
 
-```js
+```css
   element { pointer-events: none; }
   element::after { pointer-events: all; }
 ```
