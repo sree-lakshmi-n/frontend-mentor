@@ -1,11 +1,6 @@
 .search-bar {
   @include flex-center;
   width: 100%;
-  border-radius: 1.1rem;
-  -webkit-border-radius: 1.1rem;
-  -moz-border-radius: 1.1rem;
-  -ms-border-radius: 1.1rem;
-  -o-border-radius: 1.1rem;
 
   &-input {
     width: 50%;
@@ -13,7 +8,8 @@
     font-family: inherit;
     border: none;
     outline: none;
-
+    border-top-left-radius: $border-radius-medium;
+    border-bottom-left-radius: $border-radius-medium;
     &::placeholder {
       color: $dark-gray;
     }
@@ -23,6 +19,8 @@
     border: none;
     align-self: stretch;
     padding: 0.8rem 1.2rem;
+    border-top-right-radius: $border-radius-medium;
+    border-bottom-right-radius: $border-radius-medium;
     img {
       width: 100%;
     }
