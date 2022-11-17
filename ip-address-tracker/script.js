@@ -33,3 +33,13 @@ const addIPDetailsContent = (data) => {
   ).textContent = `UTC ${timezone}`;
   document.querySelector(".ip-isp .ip-details-content").textContent = isp;
 };
+
+let mapOptions = {
+  center: [17.37, 78.78],
+  zoom: 10,
+};
+let map = new L.map("map", mapOptions);
+let layer = new L.TileLayer(
+  "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+);
+map.addLayer(layer);
