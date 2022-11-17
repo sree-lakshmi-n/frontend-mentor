@@ -18,18 +18,15 @@ body {
 .ip-details-container {
   width: 70%;
   background-color: white;
-  padding: 1.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  align-items: stretch;
+  padding: 1.8rem 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
   border-radius: 1.3rem;
   -webkit-border-radius: 1.3rem;
   -moz-border-radius: 1.3rem;
   -ms-border-radius: 1.3rem;
   -o-border-radius: 1.3rem;
-  justify-content: space-evenly;
   position: absolute;
   z-index: 10;
   bottom: 0;
@@ -40,8 +37,7 @@ body {
   -o-transform: translateY(50%);
   box-shadow: 1px 1px 4px rgba(43, 43, 43, 0.2); }
   .ip-details-container .ip-details {
-    border-right: 1px solid #969696;
-    padding: 0 2.4rem; }
+    border-right: 1px solid #969696; }
     .ip-details-container .ip-details:last-child {
       border: none; }
     .ip-details-container .ip-details-heading {
@@ -91,6 +87,8 @@ body {
 
 .section-header {
   background-image: url(../../images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding: 3.2rem 0 8.4rem;
   display: flex;
   justify-content: center;
