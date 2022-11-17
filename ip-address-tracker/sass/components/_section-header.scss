@@ -4,6 +4,7 @@
   @include flex-center(column);
   gap: 2.4rem;
   position: relative;
+  min-height: 20rem;
 }
 .title {
   color: $white;
