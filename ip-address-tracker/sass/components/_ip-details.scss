@@ -1,15 +1,16 @@
 .ip-details-container {
   width: 70%;
   background-color: $white;
-  padding: 1.8rem;
-  @include flex-center;
-  align-items: stretch;
+  padding: 1.8rem 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.8rem;
   border-radius: $border-radius-large;
   -webkit-border-radius: $border-radius-large;
   -moz-border-radius: $border-radius-large;
   -ms-border-radius: $border-radius-large;
   -o-border-radius: $border-radius-large;
-  justify-content: space-evenly;
+
   position: absolute;
   z-index: 10;
   bottom: 0;
@@ -21,7 +22,7 @@
   box-shadow: 1px 1px 4px rgba($very-dark-gray, 0.2);
   .ip-details {
     border-right: 1px solid $dark-gray;
-    padding: 0 2.4rem;
+
     &:last-child {
       border: none;
     }
